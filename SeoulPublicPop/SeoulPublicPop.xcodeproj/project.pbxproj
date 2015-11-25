@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74939F1C0630FA00BF1405 /* AppDelegate.swift */; };
+		AF7493A21C0630FA00BF1405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493A11C0630FA00BF1405 /* ViewController.swift */; };
+		AF7493A51C0630FA00BF1405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7493A31C0630FA00BF1405 /* Main.storyboard */; };
+		AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */; };
+		AF7493AA1C0630FA00BF1405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7493A91C0630FA00BF1405 /* Assets.xcassets */; };
+		AF7493AD1C0630FA00BF1405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7493AB1C0630FA00BF1405 /* LaunchScreen.storyboard */; };
+		AF7493B81C0630FB00BF1405 /* SeoulPublicPopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493B71C0630FB00BF1405 /* SeoulPublicPopTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF7493B41C0630FA00BF1405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF7493941C0630FA00BF1405 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF74939B1C0630FA00BF1405;
+			remoteInfo = SeoulPublicPop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulPublicPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF74939F1C0630FA00BF1405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF7493A11C0630FA00BF1405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF7493A41C0630FA00BF1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF7493A71C0630FA00BF1405 /* SeoulPublicPop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeoulPublicPop.xcdatamodel; sourceTree = "<group>"; };
+		AF7493A91C0630FA00BF1405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF7493AC1C0630FA00BF1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF7493AE1C0630FA00BF1405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7493B31C0630FA00BF1405 /* SeoulPublicPopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeoulPublicPopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7493B71C0630FB00BF1405 /* SeoulPublicPopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulPublicPopTests.swift; sourceTree = "<group>"; };
+		AF7493B91C0630FB00BF1405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF7493991C0630FA00BF1405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7493B01C0630FA00BF1405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF7493931C0630FA00BF1405 = {
+			isa = PBXGroup;
+			children = (
+				AF74939E1C0630FA00BF1405 /* SeoulPublicPop */,
+				AF7493B61C0630FA00BF1405 /* SeoulPublicPopTests */,
+				AF74939D1C0630FA00BF1405 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF74939D1C0630FA00BF1405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */,
+				AF7493B31C0630FA00BF1405 /* SeoulPublicPopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF74939E1C0630FA00BF1405 /* SeoulPublicPop */ = {
+			isa = PBXGroup;
+			children = (
+				AF74939F1C0630FA00BF1405 /* AppDelegate.swift */,
+				AF7493A11C0630FA00BF1405 /* ViewController.swift */,
+				AF7493A31C0630FA00BF1405 /* Main.storyboard */,
+				AF7493A91C0630FA00BF1405 /* Assets.xcassets */,
+				AF7493AB1C0630FA00BF1405 /* LaunchScreen.storyboard */,
+				AF7493AE1C0630FA00BF1405 /* Info.plist */,
+				AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */,
+			);
+			path = SeoulPublicPop;
+			sourceTree = "<group>";
+		};
+		AF7493B61C0630FA00BF1405 /* SeoulPublicPopTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF7493B71C0630FB00BF1405 /* SeoulPublicPopTests.swift */,
+				AF7493B91C0630FB00BF1405 /* Info.plist */,
+			);
+			path = SeoulPublicPopTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF74939B1C0630FA00BF1405 /* SeoulPublicPop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7493BC1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPop" */;
+			buildPhases = (
+				AF7493981C0630FA00BF1405 /* Sources */,
+				AF7493991C0630FA00BF1405 /* Frameworks */,
+				AF74939A1C0630FA00BF1405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeoulPublicPop;
+			productName = SeoulPublicPop;
+			productReference = AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF7493B21C0630FA00BF1405 /* SeoulPublicPopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7493BF1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPopTests" */;
+			buildPhases = (
+				AF7493AF1C0630FA00BF1405 /* Sources */,
+				AF7493B01C0630FA00BF1405 /* Frameworks */,
+				AF7493B11C0630FA00BF1405 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF7493B51C0630FA00BF1405 /* PBXTargetDependency */,
+			);
+			name = SeoulPublicPopTests;
+			productName = SeoulPublicPopTests;
+			productReference = AF7493B31C0630FA00BF1405 /* SeoulPublicPopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF7493941C0630FA00BF1405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Pacilo's Lab";
+				TargetAttributes = {
+					AF74939B1C0630FA00BF1405 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					AF7493B21C0630FA00BF1405 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = AF74939B1C0630FA00BF1405;
+					};
+				};
+			};
+			buildConfigurationList = AF7493971C0630FA00BF1405 /* Build configuration list for PBXProject "SeoulPublicPop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF7493931C0630FA00BF1405;
+			productRefGroup = AF74939D1C0630FA00BF1405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF74939B1C0630FA00BF1405 /* SeoulPublicPop */,
+				AF7493B21C0630FA00BF1405 /* SeoulPublicPopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF74939A1C0630FA00BF1405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7493AD1C0630FA00BF1405 /* LaunchScreen.storyboard in Resources */,
+				AF7493AA1C0630FA00BF1405 /* Assets.xcassets in Resources */,
+				AF7493A51C0630FA00BF1405 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7493B11C0630FA00BF1405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF7493981C0630FA00BF1405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7493A21C0630FA00BF1405 /* ViewController.swift in Sources */,
+				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
+				AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7493AF1C0630FA00BF1405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7493B81C0630FB00BF1405 /* SeoulPublicPopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF7493B51C0630FA00BF1405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF74939B1C0630FA00BF1405 /* SeoulPublicPop */;
+			targetProxy = AF7493B41C0630FA00BF1405 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF7493A31C0630FA00BF1405 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7493A41C0630FA00BF1405 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF7493AB1C0630FA00BF1405 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7493AC1C0630FA00BF1405 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF7493BA1C0630FB00BF1405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF7493BB1C0630FB00BF1405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF7493BD1C0630FB00BF1405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SeoulPublicPop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF7493BE1C0630FB00BF1405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SeoulPublicPop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF7493C01C0630FB00BF1405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SeoulPublicPopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeoulPublicPop.app/SeoulPublicPop";
+			};
+			name = Debug;
+		};
+		AF7493C11C0630FB00BF1405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SeoulPublicPopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeoulPublicPop.app/SeoulPublicPop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF7493971C0630FA00BF1405 /* Build configuration list for PBXProject "SeoulPublicPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7493BA1C0630FB00BF1405 /* Debug */,
+				AF7493BB1C0630FB00BF1405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF7493BC1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7493BD1C0630FB00BF1405 /* Debug */,
+				AF7493BE1C0630FB00BF1405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF7493BF1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7493C01C0630FB00BF1405 /* Debug */,
+				AF7493C11C0630FB00BF1405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF7493A71C0630FA00BF1405 /* SeoulPublicPop.xcdatamodel */,
+			);
+			currentVersion = AF7493A71C0630FA00BF1405 /* SeoulPublicPop.xcdatamodel */;
+			path = SeoulPublicPop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF7493941C0630FA00BF1405 /* Project object */;
+}
