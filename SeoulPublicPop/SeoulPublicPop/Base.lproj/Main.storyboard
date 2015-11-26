@@ -133,9 +133,9 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <outlet property="imageCoverView" destination="4yi-Em-sDf" id="yvs-lI-uIl"/>
-                                    <outlet property="imageView" destination="cHD-Iw-ne5" id="aIg-4u-NP6"/>
-                                    <outlet property="titleLabel" destination="H55-jf-MZp" id="Z5n-Ij-cDR"/>
+                                    <outlet property="imageCoverView" destination="4yi-Em-sDf" id="KKq-Uw-br3"/>
+                                    <outlet property="imageView" destination="cHD-Iw-ne5" id="m8B-v2-iKd"/>
+                                    <outlet property="titleLabel" destination="H55-jf-MZp" id="TAK-Dw-MTQ"/>
                                     <segue destination="idd-r5-oe2" kind="show" id="a01-ta-ifF"/>
                                 </connections>
                             </collectionViewCell>

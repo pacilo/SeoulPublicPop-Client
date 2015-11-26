@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   CategoryList.plist
-   SeoulPublicPop
-
-   Created by pacilo on 2015. 11. 26..
-   Copyright (c) 2015년 Pacilo's Lab. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<array>
+	<dict>
+		<key>Title</key>
+		<string>다목적실</string>
+		<key>Background</key>
+		<string>Background-0</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>세미나실</string>
+		<key>Background</key>
+		<string>Background-1</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>문화공연전시</string>
+		<key>Background</key>
+		<string>Background-2</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>체험실습공간</string>
+		<key>Background</key>
+		<string>Background-3</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>체육시설</string>
+		<key>Background</key>
+		<string>Background-4</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>화장실</string>
+		<key>Background</key>
+		<string>Background-5</string>
+	</dict>
+</array>
 </plist>
