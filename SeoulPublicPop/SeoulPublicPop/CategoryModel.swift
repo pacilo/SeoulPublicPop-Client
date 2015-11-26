@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoryListModel {
+class CategoryModel {
     
     var title: String
     var backgroundImage: UIImage

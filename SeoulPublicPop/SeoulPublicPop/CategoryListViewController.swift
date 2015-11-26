@@ -1,17 +1,20 @@
 //
 //  CategoryListViewController.swift
 //  SeoulPublicPop
+//  Modified by pacilo on 2015. 11. 26..
 //
-//  Created by pacilo on 2015. 11. 26..
-//  Copyright © 2015년 Pacilo's Lab. All rights reserved.
+//  Created by Mic Pringle on 27/02/2015.
+//  Copyright (c) 2015 Ray Wenderlich. All rights reserved.
 //
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "CategoryCell"
 
 class CategoryListViewController: UICollectionViewController {
 
+    let categoryList = CategoryList.allCategory()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,11 +22,20 @@ class CategoryListViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        // self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        if let patternImage = UIImage(named: "Pattern") {
+            view.backgroundColor = UIColor(patternImage: patternImage)
+        }
+        collectionView!.backgroundColor = UIColor.clearColor()
+        collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
     }
-
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -43,20 +55,19 @@ class CategoryListViewController: UICollectionViewController {
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return categoryList.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CategoryListViewCell
+
         // Configure the cell
-    
+        cell.categoryList = categoryList[indexPath.item]
         return cell
     }
 
@@ -92,3 +103,23 @@ class CategoryListViewController: UICollectionViewController {
     */
 
 }
+
+/*
+extension CategoryListViewController {
+    
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categoryList.count
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CategoryListViewCell
+        cell.categoryList = categoryList[indexPath.item]
+        return cell
+    }
+    
+}
+*/

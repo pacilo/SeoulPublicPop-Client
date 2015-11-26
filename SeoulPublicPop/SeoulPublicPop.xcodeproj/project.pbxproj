@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74939F1C0630FA00BF1405 /* AppDelegate.swift */; };
-		AF7493A21C0630FA00BF1405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493A11C0630FA00BF1405 /* ViewController.swift */; };
 		AF7493A51C0630FA00BF1405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7493A31C0630FA00BF1405 /* Main.storyboard */; };
 		AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */; };
 		AF7493AA1C0630FA00BF1405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7493A91C0630FA00BF1405 /* Assets.xcassets */; };
 		AF7493AD1C0630FA00BF1405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7493AB1C0630FA00BF1405 /* LaunchScreen.storyboard */; };
 		AF7493B81C0630FB00BF1405 /* SeoulPublicPopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493B71C0630FB00BF1405 /* SeoulPublicPopTests.swift */; };
+		AF7493C31C0635F500BF1405 /* CategoryList.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF7493C21C0635F500BF1405 /* CategoryList.plist */; };
+		AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C41C06373500BF1405 /* CategoryModel.swift */; };
+		AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C61C06379B00BF1405 /* CategoryList.swift */; };
+		AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */; };
+		AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */; };
+		AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +34,6 @@
 /* Begin PBXFileReference section */
 		AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulPublicPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF74939F1C0630FA00BF1405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF7493A11C0630FA00BF1405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF7493A41C0630FA00BF1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF7493A71C0630FA00BF1405 /* SeoulPublicPop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeoulPublicPop.xcdatamodel; sourceTree = "<group>"; };
 		AF7493A91C0630FA00BF1405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +42,12 @@
 		AF7493B31C0630FA00BF1405 /* SeoulPublicPopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeoulPublicPopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7493B71C0630FB00BF1405 /* SeoulPublicPopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulPublicPopTests.swift; sourceTree = "<group>"; };
 		AF7493B91C0630FB00BF1405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7493C21C0635F500BF1405 /* CategoryList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategoryList.plist; sourceTree = "<group>"; };
+		AF7493C41C06373500BF1405 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		AF7493C61C06379B00BF1405 /* CategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewCell.swift; sourceTree = "<group>"; };
+		AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListLayoutDraw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +89,10 @@
 		AF74939E1C0630FA00BF1405 /* SeoulPublicPop */ = {
 			isa = PBXGroup;
 			children = (
-				AF74939F1C0630FA00BF1405 /* AppDelegate.swift */,
-				AF7493A11C0630FA00BF1405 /* ViewController.swift */,
-				AF7493A31C0630FA00BF1405 /* Main.storyboard */,
-				AF7493A91C0630FA00BF1405 /* Assets.xcassets */,
-				AF7493AB1C0630FA00BF1405 /* LaunchScreen.storyboard */,
-				AF7493AE1C0630FA00BF1405 /* Info.plist */,
-				AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */,
+				AFCE8D791C06A1280024E41E /* Other */,
+				AFCE8D771C06A0F40024E41E /* Storyboard */,
+				AFCE8D781C06A1010024E41E /* Database & Resource */,
+				AFCE8D761C06A0DC0024E41E /* CategoryList (EntryPoint) */,
 			);
 			path = SeoulPublicPop;
 			sourceTree = "<group>";
@@ -97,6 +104,46 @@
 				AF7493B91C0630FB00BF1405 /* Info.plist */,
 			);
 			path = SeoulPublicPopTests;
+			sourceTree = "<group>";
+		};
+		AFCE8D761C06A0DC0024E41E /* CategoryList (EntryPoint) */ = {
+			isa = PBXGroup;
+			children = (
+				AF7493C21C0635F500BF1405 /* CategoryList.plist */,
+				AF7493C41C06373500BF1405 /* CategoryModel.swift */,
+				AF7493C61C06379B00BF1405 /* CategoryList.swift */,
+				AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */,
+				AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */,
+				AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */,
+			);
+			name = "CategoryList (EntryPoint)";
+			sourceTree = "<group>";
+		};
+		AFCE8D771C06A0F40024E41E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AF7493A31C0630FA00BF1405 /* Main.storyboard */,
+				AF7493AB1C0630FA00BF1405 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		AFCE8D781C06A1010024E41E /* Database & Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AF7493A91C0630FA00BF1405 /* Assets.xcassets */,
+				AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */,
+			);
+			name = "Database & Resource";
+			sourceTree = "<group>";
+		};
+		AFCE8D791C06A1280024E41E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AF74939F1C0630FA00BF1405 /* AppDelegate.swift */,
+				AF7493AE1C0630FA00BF1405 /* Info.plist */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +229,7 @@
 			files = (
 				AF7493AD1C0630FA00BF1405 /* LaunchScreen.storyboard in Resources */,
 				AF7493AA1C0630FA00BF1405 /* Assets.xcassets in Resources */,
+				AF7493C31C0635F500BF1405 /* CategoryList.plist in Resources */,
 				AF7493A51C0630FA00BF1405 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,8 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7493A21C0630FA00BF1405 /* ViewController.swift in Sources */,
+				AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */,
+				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
+				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
+				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
+				AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */,
 				AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +444,7 @@
 				AF7493BE1C0630FB00BF1405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF7493BF1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPopTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +453,7 @@
 				AF7493C11C0630FB00BF1405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
