@@ -15,7 +15,7 @@ class CategoryListViewController: UICollectionViewController {
 
     let categoryList = CategoryList.allCategory()
     
-    let categoryListLayout: CategoryListLayoutDraw = CategoryListLayoutDraw()
+//    let categoryListLayout: CategoryListLayoutDraw = CategoryListLayoutDraw()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,15 +52,19 @@ class CategoryListViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        let indexPath = collectionView!.indexPathForCell(sender as! CategoryListViewCell)
+        let tabBarController = segue.destinationViewController as! UITabBarController
+        let localSearchController = tabBarController.viewControllers![0] as! LocalSearchViewController
+        let mapSearchController = tabBarController.viewControllers![1] as! MapSearchViewController
+        localSearchController.categoryType = categoryList[indexPath!.item % categoryList.count].title
+        mapSearchController.categoryType = categoryList[indexPath!.item % categoryList.count].title
     }
-    */
 
     // MARK: UICollectionViewDataSource
 

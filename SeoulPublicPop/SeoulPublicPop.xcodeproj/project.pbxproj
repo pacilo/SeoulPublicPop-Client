@@ -19,6 +19,9 @@
 		AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */; };
 		AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */; };
 		AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */; };
+		AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */; };
+		AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */; };
+		AFDBE3941C21F4D70072B9DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDBE3931C21F4D70072B9DB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewCell.swift; sourceTree = "<group>"; };
 		AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListLayoutDraw.swift; sourceTree = "<group>"; };
+		AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchViewController.swift; sourceTree = "<group>"; };
+		AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
+		AFDBE3931C21F4D70072B9DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDBE3941C21F4D70072B9DB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +78,7 @@
 		AF7493931C0630FA00BF1405 = {
 			isa = PBXGroup;
 			children = (
+				AFDBE3931C21F4D70072B9DB /* MapKit.framework */,
 				AF74939E1C0630FA00BF1405 /* SeoulPublicPop */,
 				AF7493B61C0630FA00BF1405 /* SeoulPublicPopTests */,
 				AF74939D1C0630FA00BF1405 /* Products */,
@@ -93,6 +101,7 @@
 				AFCE8D771C06A0F40024E41E /* Storyboard */,
 				AFCE8D781C06A1010024E41E /* Database & Resource */,
 				AFCE8D761C06A0DC0024E41E /* CategoryList (EntryPoint) */,
+				AFDBE3631C21F1410072B9DB /* SearchWaySelection */,
 			);
 			path = SeoulPublicPop;
 			sourceTree = "<group>";
@@ -146,6 +155,15 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		AFDBE3631C21F1410072B9DB /* SearchWaySelection */ = {
+			isa = PBXGroup;
+			children = (
+				AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */,
+				AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */,
+			);
+			name = SearchWaySelection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,6 +214,11 @@
 				TargetAttributes = {
 					AF74939B1C0630FA00BF1405 = {
 						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					AF7493B21C0630FA00BF1405 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -250,10 +273,12 @@
 			files = (
 				AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */,
 				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
+				AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */,
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
 				AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */,
+				AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */,
 				AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

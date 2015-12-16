@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Map Search Controller-->
         <scene sceneID="G4h-Lc-s9O">
             <objects>
-                <viewController id="I1W-nX-RLb" sceneMemberID="viewController">
+                <viewController title="Map Search Controller" id="I1W-nX-RLb" customClass="MapSearchViewController" customModule="SeoulPublicPop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sY2-vr-qqQ"/>
                         <viewControllerLayoutGuide type="bottom" id="VgP-27-Sfo"/>
@@ -16,7 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="DHY-BP-e5H">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pmY-FS-z91">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pmY-FS-z91" firstAttribute="bottom" secondItem="VgP-27-Sfo" secondAttribute="top" id="EfT-Gg-xXf"/>
+                            <constraint firstItem="pmY-FS-z91" firstAttribute="leading" secondItem="DHY-BP-e5H" secondAttribute="leading" id="RTA-Ed-ua9"/>
+                            <constraint firstAttribute="trailing" secondItem="pmY-FS-z91" secondAttribute="trailing" id="gi8-Ut-RlO"/>
+                            <constraint firstItem="pmY-FS-z91" firstAttribute="top" secondItem="sY2-vr-qqQ" secondAttribute="bottom" id="zeE-8U-xdS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="H6r-2s-SVA"/>
                 </viewController>
@@ -24,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="1592" y="699"/>
         </scene>
-        <!--Item 1-->
+        <!--Local Search Controller-->
         <scene sceneID="0qS-VA-EgE">
             <objects>
-                <viewController id="jLJ-Ql-Z6V" sceneMemberID="viewController">
+                <viewController title="Local Search Controller" id="jLJ-Ql-Z6V" customClass="LocalSearchViewController" customModule="SeoulPublicPop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6fD-FM-zs6"/>
                         <viewControllerLayoutGuide type="bottom" id="9oZ-R3-VGH"/>
