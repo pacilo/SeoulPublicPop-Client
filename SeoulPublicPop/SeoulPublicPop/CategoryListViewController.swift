@@ -15,6 +15,8 @@ class CategoryListViewController: UICollectionViewController {
 
     let categoryList = CategoryList.allCategory()
     
+    let categoryListLayout: CategoryListLayoutDraw = CategoryListLayoutDraw()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,7 +51,7 @@ class CategoryListViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -69,14 +71,14 @@ class CategoryListViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return categoryList.count
+        return categoryList.count * 2
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CategoryListViewCell
         
         // Configure the cell
-        cell.categoryList = categoryList[indexPath.item]
+        cell.categoryList = categoryList[indexPath.item % categoryList.count]
         return cell
     }
 
@@ -111,24 +113,25 @@ class CategoryListViewController: UICollectionViewController {
     }
     */
 
-}
-
 /*
-extension CategoryListViewController {
+    override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    float contentOffsetWhenFullyScrolledRight = self.collectionView.frame.size.width * ([self.dataArray count] -1);
+
     
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+        let reDrawMarginOfElement: CGFloat = CGFloat((categoryList.count - (categoryList.count / 3) - 2) * 180)
+        let contentOffsetWhenFullyScrolledBottom = self.collectionView!.frame.size.height +  reDrawMarginOfElement
+        
+        if (scrollView.contentOffset.y >= contentOffsetWhenFullyScrolledBottom) {
+            let newIndex = Int(scrollView.contentOffset.y / 180) % categoryList.count
+            let newIndexPath = NSIndexPath(forItem: newIndex, inSection: 0)
+            print(categoryList[newIndexPath.row].title) // TESTCODE
+            self.collectionView!.scrollToItemAtIndexPath(newIndexPath, atScrollPosition: UICollectionViewScrollPosition.Top, animated: false)
+        }
+        else if (scrollView.contentOffset.y == 0) {
+            let newIndex = Int(scrollView.contentOffset.y / 180) % categoryList.count
+            let newIndexPath = NSIndexPath(forItem: newIndex, inSection: 0)
+            self.collectionView!.scrollToItemAtIndexPath(newIndexPath, atScrollPosition: UICollectionViewScrollPosition.Bottom, animated: false)
+        }
     }
-    
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categoryList.count
-    }
-    
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CategoryListViewCell
-        cell.categoryList = categoryList[indexPath.item]
-        return cell
-    }
-    
+*/    
 }
-*/

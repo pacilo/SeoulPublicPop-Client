@@ -26,7 +26,7 @@ class CategoryListLayoutDraw: UICollectionViewLayout {
     
     /* The amount the user needs to scroll before the featured cell changes */
     let dragOffset: CGFloat = 180.0
-    
+        
     var cache = [UICollectionViewLayoutAttributes]()
     
     /* Returns the item index of the currently featured cell */
@@ -69,7 +69,7 @@ class CategoryListLayoutDraw: UICollectionViewLayout {
     
     /* Return the size of all the content in the collection view */
     override func collectionViewContentSize() -> CGSize {
-        let contentHeight = (CGFloat(numberOfItems) * dragOffset) + (height - dragOffset)
+        let contentHeight = CGFloat(numberOfItems - 1) * dragOffset
         return CGSize(width: width, height: contentHeight)
     }
     
@@ -82,9 +82,10 @@ class CategoryListLayoutDraw: UICollectionViewLayout {
         var frame = CGRectZero
         var y: CGFloat = 0
         
-        for item in 0..<numberOfItems {
+        for item in 0 ..< numberOfItems {
             let indexPath = NSIndexPath(forItem: item, inSection: 0)
             let attributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
+            
             /* Important because each cell has to slide over the top of the previous one */
             attributes.zIndex = item
             /* Initially set the height of the cell to the standard height */
@@ -100,6 +101,7 @@ class CategoryListLayoutDraw: UICollectionViewLayout {
                 height = standardHeight + max((featuredHeight - standardHeight) * nextItemPercentageOffset, 0)
                 y = maxY - height
             }
+            
             frame = CGRect(x: 0, y: y, width: width, height: height)
             attributes.frame = frame
             cache.append(attributes)
@@ -131,4 +133,3 @@ class CategoryListLayoutDraw: UICollectionViewLayout {
     }
     
 }
-
