@@ -25,11 +25,20 @@ class CategoryListViewController: UICollectionViewController {
         // self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        self.automaticallyAdjustsScrollViewInsets = false
         if let patternImage = UIImage(named: "Pattern") {
             view.backgroundColor = UIColor(patternImage: patternImage)
         }
         collectionView!.backgroundColor = UIColor.clearColor()
         collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

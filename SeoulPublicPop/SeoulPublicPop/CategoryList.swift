@@ -17,11 +17,9 @@ class CategoryList: CategoryModel {
                 for dictionary in tutorialsFromPlist {
                     let getDictionary = CategoryList(dictionary: dictionary as! NSDictionary)
                     categoryList.append(getDictionary)
-                    print(getDictionary)
                 }
             }
         }
-        print(categoryList)
         return categoryList
     }
     
