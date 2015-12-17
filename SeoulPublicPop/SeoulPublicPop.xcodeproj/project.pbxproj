@@ -22,6 +22,7 @@
 		AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */; };
 		AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */; };
 		AFDBE3941C21F4D70072B9DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDBE3931C21F4D70072B9DB /* MapKit.framework */; };
+		AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchViewController.swift; sourceTree = "<group>"; };
 		AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
 		AFDBE3931C21F4D70072B9DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkOfRequestInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				AF7493A91C0630FA00BF1405 /* Assets.xcassets */,
 				AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */,
+				AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */,
 			);
 			name = "Database & Resource";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
+				AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */,
 				AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */,
 				AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */,
 				AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */,
