@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0178591C247C0F007577F4 /* LocationInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF0178581C247C0F007577F4 /* LocationInfo.plist */; };
 		AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74939F1C0630FA00BF1405 /* AppDelegate.swift */; };
 		AF7493A51C0630FA00BF1405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7493A31C0630FA00BF1405 /* Main.storyboard */; };
 		AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF0178581C247C0F007577F4 /* LocationInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LocationInfo.plist; sourceTree = "<group>"; };
 		AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulPublicPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF74939F1C0630FA00BF1405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7493A41C0630FA00BF1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		AFDBE3631C21F1410072B9DB /* SearchWaySelection */ = {
 			isa = PBXGroup;
 			children = (
+				AF0178581C247C0F007577F4 /* LocationInfo.plist */,
 				AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */,
 				AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */,
 			);
@@ -256,6 +259,7 @@
 				AF7493AD1C0630FA00BF1405 /* LaunchScreen.storyboard in Resources */,
 				AF7493AA1C0630FA00BF1405 /* Assets.xcassets in Resources */,
 				AF7493C31C0635F500BF1405 /* CategoryList.plist in Resources */,
+				AF0178591C247C0F007577F4 /* LocationInfo.plist in Resources */,
 				AF7493A51C0630FA00BF1405 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
