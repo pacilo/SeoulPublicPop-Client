@@ -79,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF01785A1C249607007577F4 /* LocalSearch */ = {
+			isa = PBXGroup;
+			children = (
+				AF0178581C247C0F007577F4 /* LocationInfo.plist */,
+				AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */,
+			);
+			name = LocalSearch;
+			sourceTree = "<group>";
+		};
+		AF01785B1C24961B007577F4 /* MapSearch */ = {
+			isa = PBXGroup;
+			children = (
+				AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */,
+			);
+			name = MapSearch;
+			sourceTree = "<group>";
+		};
 		AF7493931C0630FA00BF1405 = {
 			isa = PBXGroup;
 			children = (
@@ -163,9 +180,8 @@
 		AFDBE3631C21F1410072B9DB /* SearchWaySelection */ = {
 			isa = PBXGroup;
 			children = (
-				AF0178581C247C0F007577F4 /* LocationInfo.plist */,
-				AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */,
-				AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */,
+				AF01785A1C249607007577F4 /* LocalSearch */,
+				AF01785B1C24961B007577F4 /* MapSearch */,
 			);
 			name = SearchWaySelection;
 			sourceTree = "<group>";
