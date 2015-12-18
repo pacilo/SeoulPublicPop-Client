@@ -15,7 +15,7 @@ class CategoryListViewController: UICollectionViewController {
 
     let categoryList = CategoryList.allCategory()
     
-//    let categoryListLayout: CategoryListLayoutDraw = CategoryListLayoutDraw()
+    // let categoryListLayout: CategoryListLayoutDraw = CategoryListLayoutDraw()
     
     override func viewDidLoad() {
         super.viewDidLoad()

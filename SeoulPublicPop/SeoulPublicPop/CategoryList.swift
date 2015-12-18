@@ -13,8 +13,8 @@ class CategoryList: CategoryModel {
     class func allCategory() -> [CategoryList] {
         var categoryList = [CategoryList]()
         if let URL = NSBundle.mainBundle().URLForResource("CategoryList", withExtension: "plist") {
-            if let tutorialsFromPlist = NSArray(contentsOfURL: URL) {
-                for dictionary in tutorialsFromPlist {
+            if let categoryFromPlist = NSArray(contentsOfURL: URL) {
+                for dictionary in categoryFromPlist {
                     let getDictionary = CategoryList(dictionary: dictionary as! NSDictionary)
                     categoryList.append(getDictionary)
                 }

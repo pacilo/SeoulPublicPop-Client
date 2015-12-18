@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF0178591C247C0F007577F4 /* LocationInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF0178581C247C0F007577F4 /* LocationInfo.plist */; };
+		AF01785D1C24967F007577F4 /* LocalSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01785C1C24967F007577F4 /* LocalSearchModel.swift */; };
+		AF01785F1C2499A1007577F4 /* LocalSearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF01785E1C2499A1007577F4 /* LocalSearchList.swift */; };
 		AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74939F1C0630FA00BF1405 /* AppDelegate.swift */; };
 		AF7493A51C0630FA00BF1405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7493A31C0630FA00BF1405 /* Main.storyboard */; };
 		AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		AF0178581C247C0F007577F4 /* LocationInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LocationInfo.plist; sourceTree = "<group>"; };
+		AF01785C1C24967F007577F4 /* LocalSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchModel.swift; sourceTree = "<group>"; };
+		AF01785E1C2499A1007577F4 /* LocalSearchList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchList.swift; sourceTree = "<group>"; };
 		AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulPublicPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF74939F1C0630FA00BF1405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7493A41C0630FA00BF1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 			children = (
 				AF0178581C247C0F007577F4 /* LocationInfo.plist */,
 				AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */,
+				AF01785C1C24967F007577F4 /* LocalSearchModel.swift */,
+				AF01785E1C2499A1007577F4 /* LocalSearchList.swift */,
 			);
 			name = LocalSearch;
 			sourceTree = "<group>";
@@ -295,7 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */,
+				AF01785F1C2499A1007577F4 /* LocalSearchList.swift in Sources */,
 				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
+				AF01785D1C24967F007577F4 /* LocalSearchModel.swift in Sources */,
 				AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */,
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
