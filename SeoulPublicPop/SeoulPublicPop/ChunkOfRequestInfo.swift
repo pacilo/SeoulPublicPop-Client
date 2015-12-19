@@ -7,13 +7,13 @@
 //
 
 import Foundation
-
+/*
 struct RequestChunk {
     var categoryType: String!
     var localeName: String?
     // 여긴 GPS 좌표정보 + 카츄가 정의해야함.
 }
-
+*/
 class ChunkOfRequestInfo {
     var searchWayType: String!
     var requestChunk: RequestChunk!

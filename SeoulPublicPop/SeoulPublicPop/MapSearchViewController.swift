@@ -14,7 +14,8 @@ class MapSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var d = DataLoader()
+        d.test()
         // Do any additional setup after loading the view.
         print("This is Map Search")
         print(categoryType)

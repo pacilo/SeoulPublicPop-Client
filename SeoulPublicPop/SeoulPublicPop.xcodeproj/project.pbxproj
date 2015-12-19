@@ -26,6 +26,9 @@
 		AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */; };
 		AFDBE3941C21F4D70072B9DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDBE3931C21F4D70072B9DB /* MapKit.framework */; };
 		AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */; };
+		CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B231C25083200781A27 /* DataCenter.swift */; };
+		CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B241C25083200781A27 /* DataLoader.swift */; };
+		CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B251C25083200781A27 /* RequestChunk.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
 		AFDBE3931C21F4D70072B9DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkOfRequestInfo.swift; sourceTree = "<group>"; };
+		CD8C7B231C25083200781A27 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		CD8C7B241C25083200781A27 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		CD8C7B251C25083200781A27 /* RequestChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestChunk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 		AF74939E1C0630FA00BF1405 /* SeoulPublicPop */ = {
 			isa = PBXGroup;
 			children = (
+				CD637E7F1C25086900094082 /* NetWork */,
 				AFCE8D791C06A1280024E41E /* Other */,
 				AFCE8D771C06A0F40024E41E /* Storyboard */,
 				AFCE8D781C06A1010024E41E /* Database & Resource */,
@@ -190,6 +197,16 @@
 				AF01785B1C24961B007577F4 /* MapSearch */,
 			);
 			name = SearchWaySelection;
+			sourceTree = "<group>";
+		};
+		CD637E7F1C25086900094082 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				CD8C7B231C25083200781A27 /* DataCenter.swift */,
+				CD8C7B241C25083200781A27 /* DataLoader.swift */,
+				CD8C7B251C25083200781A27 /* RequestChunk.swift */,
+			);
+			name = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,12 +319,15 @@
 			files = (
 				AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */,
 				AF01785F1C2499A1007577F4 /* LocalSearchList.swift in Sources */,
+				CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */,
+				CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */,
 				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
 				AF01785D1C24967F007577F4 /* LocalSearchModel.swift in Sources */,
 				AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */,
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
+				CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */,
 				AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */,
 				AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */,
 				AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */,
