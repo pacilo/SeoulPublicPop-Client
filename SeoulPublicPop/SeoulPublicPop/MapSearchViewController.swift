@@ -14,8 +14,8 @@ class MapSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var d = DataLoader()
-        d.test()
+        test()
+        
         // Do any additional setup after loading the view.
         print("This is Map Search")
         print(categoryType)
@@ -24,6 +24,10 @@ class MapSearchViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func test()
+    {
+        DataCenter.getInstance().getData("동작구")
     }
     
 

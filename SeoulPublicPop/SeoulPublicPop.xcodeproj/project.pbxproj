@@ -26,6 +26,7 @@
 		AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */; };
 		AFDBE3941C21F4D70072B9DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDBE3931C21F4D70072B9DB /* MapKit.framework */; };
 		AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */; };
+		CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD637E821C257C6400094082 /* SemiDetailData.swift */; };
 		CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B231C25083200781A27 /* DataCenter.swift */; };
 		CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B241C25083200781A27 /* DataLoader.swift */; };
 		CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B251C25083200781A27 /* RequestChunk.swift */; };
@@ -65,6 +66,7 @@
 		AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
 		AFDBE3931C21F4D70072B9DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkOfRequestInfo.swift; sourceTree = "<group>"; };
+		CD637E821C257C6400094082 /* SemiDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiDetailData.swift; sourceTree = "<group>"; };
 		CD8C7B231C25083200781A27 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		CD8C7B241C25083200781A27 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CD8C7B251C25083200781A27 /* RequestChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestChunk.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				AF7493A91C0630FA00BF1405 /* Assets.xcassets */,
 				AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */,
 				AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */,
+				CD637E821C257C6400094082 /* SemiDetailData.swift */,
 			);
 			name = "Database & Resource";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
+				CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */,
 				CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */,
 				AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */,
 				AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */,
