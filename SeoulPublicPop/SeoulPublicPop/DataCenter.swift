@@ -6,20 +6,22 @@
 //  Copyright © 2015년 Pacilo's Lab. All rights reserved.
 //
 
+import Foundation
+
 class DataCenter {
     static private var center:DataCenter = DataCenter()
     static func getInstance()->DataCenter { return center }
     
-    var poshash:[Int : [String] ]
-    var localhash : [String : [SemiDetail] ]
+    var sectors : [Sector : Sector ]
+    var locals  : [ String : [ String : Local]]
     
     private init(){
-        poshash = [:]
-        localhash = [:]
+        sectors = [:]
+        locals = [:]
         
-        localhash["동작구"] = dummy()
+        dummy()
     }
-    func dummy() -> [SemiDetail]
+    func dummy()
     {
         var result:[SemiDetail] = []
         
@@ -28,15 +30,112 @@ class DataCenter {
         result.append(SemiDetail.dummy())
         result.append(SemiDetail.dummy())
         
-        return result
+        let dummylocal = Local(local : "동작구", category:  "체육시설")
+        dummylocal.dirty = false
+        dummylocal.data = result
+        
+        
+        locals["동작구"] = [:]
+        locals["동작구"]!["체육시설"] = dummylocal
     }
-    
-    func getData(local:String) -> [SemiDetail]?
+    /*
+        데이터 콜을 초기화한다. 데이터 요청을 최초로 요청할 때 사용한다. 
+        만약 이전에 해당하는 데이터 콜을 초기화했다면 가져왔던 데이터를 삭제하고 다시 시작할 준비를 한다.
+        데이터를 초기화 -> 데이터 불러옴
+    */
+    func initDataCall(local:String, category : String)
     {
-        return localhash[local]
+        let newlocal = Local(local:local,category:category)
+        
+        locals[category] = [:]
+        locals[category]![local] = newlocal
+        
+        let loader = DataLoader()
+        
+        loader.Start(locals[category]![local]!.chunk,callBack: {(data : AnyObject) -> () in
+            if let lo = self.locals[category]?[local]
+            {
+                lo.dirty = false
+                lo.maxsize = data["SIZE"] as! Int;
+                let list = data["SEMIS"]!
+
+                lo.addList(list! as AnyObject)
+            }
+        })
     }
-    func getData(point:(x:Int,y:Int)) -> [SemiDetail]?
+    func getData(local:String, category : String, idx:Int ,callback : (data : [SemiDetail])->()) -> Bool
+    {
+        if locals[category] == nil
+        {
+            locals[category] = [:]
+        }
+        if locals[category]![local] == nil
+        {
+            let newlocal = Local(local:local,category:category)
+            locals[category]![local] = newlocal
+        }
+        if let mylocal = locals[category]?[local]
+        {
+            if mylocal.isEnd(idx)
+            {
+                return false
+            }
+            if mylocal.have(idx)
+            {
+                callback(data: mylocal.getData(idx)!)
+                return true
+            }
+            
+            let loader = DataLoader()
+        
+            while( mylocal.dirty ) { }
+            mylocal.dirty = true;
+            
+            loader.Start(mylocal.chunk,callBack: {(data : AnyObject) -> () in
+                mylocal.chunk.post()
+                mylocal.dirty = false
+                mylocal.maxsize = data["SIZE"] as! Int;
+                let list = data["SEMIS"]!
+                mylocal.addList(list! as AnyObject)
+                callback(data: mylocal.getData(idx)!)
+            })
+            return true
+        }
+        print("도달불가")
+        return false
+    }
+    func getData(Sector : sector) -> [SemiDetail]?
     {
         return nil
+    }
+    
+    func getDataFromServer(local:String, category : String, callback : (data:AnyObject)->())
+    {
+        /*
+        let loader = DataLoader()
+        if let chunk = localchunks[category]![local]
+        {
+            loader.Start(chunk, callBack: callback)
+        }
+        else
+        {
+            loader.Start(LocalRequest(local: local, category: category),
+                callBack: callback)
+        }
+        */
+    }
+    func getDataFromServer(sector:Sector, callback : (data:AnyObject)->())
+    {
+    /*    let loader = DataLoader()
+        if let chunk = sectorchunks[sector]
+        {
+            loader.Start(chunk, callBack: callback)
+        }
+        else
+        {
+            //loader.Start(LocalRequest(local: local, category: category),
+             //   callBack: callback)
+        }
+      */
     }
 }

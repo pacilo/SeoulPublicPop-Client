@@ -27,7 +27,14 @@ class MapSearchViewController: UIViewController {
     }
     func test()
     {
-        DataCenter.getInstance().getData("동작구")
+        var num = 0;
+        while (DataCenter.getInstance().getData("동작구", category: "다목적실", idx: num++, callback: {(data : [SemiDetail])->() in
+            print("data!!!")
+        }))
+        {
+            print("hello")
+        }
+    //    DataCenter.getInstance().getData("동작구")
     }
     
 

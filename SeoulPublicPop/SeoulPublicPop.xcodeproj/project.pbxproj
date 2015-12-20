@@ -27,6 +27,8 @@
 		AFDBE3941C21F4D70072B9DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDBE3931C21F4D70072B9DB /* MapKit.framework */; };
 		AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */; };
 		CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD637E821C257C6400094082 /* SemiDetailData.swift */; };
+		CD6BC7B71C267A65004634D8 /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BC7B61C267A64004634D8 /* Sector.swift */; };
+		CD6BC7BB1C2685F9004634D8 /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BC7BA1C2685F9004634D8 /* Local.swift */; };
 		CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B231C25083200781A27 /* DataCenter.swift */; };
 		CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B241C25083200781A27 /* DataLoader.swift */; };
 		CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B251C25083200781A27 /* RequestChunk.swift */; };
@@ -67,6 +69,8 @@
 		AFDBE3931C21F4D70072B9DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkOfRequestInfo.swift; sourceTree = "<group>"; };
 		CD637E821C257C6400094082 /* SemiDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiDetailData.swift; sourceTree = "<group>"; };
+		CD6BC7B61C267A64004634D8 /* Sector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sector.swift; sourceTree = "<group>"; };
+		CD6BC7BA1C2685F9004634D8 /* Local.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
 		CD8C7B231C25083200781A27 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		CD8C7B241C25083200781A27 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CD8C7B251C25083200781A27 /* RequestChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestChunk.swift; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 		CD637E7F1C25086900094082 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				CD6BC7B61C267A64004634D8 /* Sector.swift */,
+				CD6BC7BA1C2685F9004634D8 /* Local.swift */,
 				CD8C7B231C25083200781A27 /* DataCenter.swift */,
 				CD8C7B241C25083200781A27 /* DataLoader.swift */,
 				CD8C7B251C25083200781A27 /* RequestChunk.swift */,
@@ -325,9 +331,11 @@
 				CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */,
 				CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */,
 				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
+				CD6BC7B71C267A65004634D8 /* Sector.swift in Sources */,
 				AF01785D1C24967F007577F4 /* LocalSearchModel.swift in Sources */,
 				AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */,
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
+				CD6BC7BB1C2685F9004634D8 /* Local.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
 				CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */,
