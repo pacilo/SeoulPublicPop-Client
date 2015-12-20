@@ -57,7 +57,7 @@
 		AF01785E1C2499A1007577F4 /* LocalSearchList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchList.swift; sourceTree = "<group>"; };
 		AF1B5B221C272F64004191BC /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		AF1B5B231C272F64004191BC /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		AF1B5B251C272F8B004191BC /* SeoulPublicPop-Client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeoulPublicPop-Client-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF6890B91C274433006A2EB8 /* SeoulPublicPop-Client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeoulPublicPop-Client-Bridging-Header.h"; sourceTree = "<group>"; };
 		AF74939C1C0630FA00BF1405 /* SeoulPublicPop-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeoulPublicPop-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF74939F1C0630FA00BF1405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7493A41C0630FA00BF1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,7 +146,6 @@
 			children = (
 				AFDBE3931C21F4D70072B9DB /* MapKit.framework */,
 				AF74939E1C0630FA00BF1405 /* SeoulPublicPop */,
-				AFAF50801C27298800B76F7D /* ThumbnailList */,
 				AF7493B61C0630FA00BF1405 /* SeoulPublicPopTests */,
 				AF74939D1C0630FA00BF1405 /* Products */,
 			);
@@ -170,6 +169,7 @@
 				AFCE8D781C06A1010024E41E /* Database & Resource */,
 				AFCE8D761C06A0DC0024E41E /* CategoryList (EntryPoint) */,
 				AFDBE3631C21F1410072B9DB /* SearchWaySelection */,
+				AFAF50801C27298800B76F7D /* ThumbnailList */,
 			);
 			path = SeoulPublicPop;
 			sourceTree = "<group>";
@@ -190,10 +190,9 @@
 				AFAF50791C27298400B76F7D /* ThumbnailCard.xib */,
 				AFAF507A1C27298400B76F7D /* ThumbnailCardView.swift */,
 				AFAF507B1C27298400B76F7D /* ThumbnailListViewController.swift */,
-				AF1B5B251C272F8B004191BC /* SeoulPublicPop-Client-Bridging-Header.h */,
+				AF6890B91C274433006A2EB8 /* SeoulPublicPop-Client-Bridging-Header.h */,
 			);
 			name = ThumbnailList;
-			path = SeoulPublicPop;
 			sourceTree = "<group>";
 		};
 		AFCE8D761C06A0DC0024E41E /* CategoryList (EntryPoint) */ = {

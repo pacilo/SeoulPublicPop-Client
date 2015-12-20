@@ -11,7 +11,8 @@ import UIKit
 @IBDesignable class ThumbnailCardView: UIView {
 
     @IBOutlet weak var thumbnailImage: UIImageView!
-    @IBOutlet weak var thumbnailInfoTable: UITableView!
+    @IBOutlet weak var locationName: UILabel!
+    @IBOutlet weak var locationAddress: UILabel!
     var view:UIView!;
     
     // Only override drawRect: if you perform custom drawing.
@@ -35,8 +36,9 @@ import UIKit
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "ThumbnailCard", bundle: bundle)
         view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-        thumbnailImage = view.subviews[0] as! UIImageView       // image : 저기안에 이미지뷰 있음.
-        thumbnailInfoTable = view.subviews[1]as! UITableView    // table : 저기안에 테이블있음.
+        thumbnailImage = view.subviews[0].subviews[0] as! UIImageView       // image : 저기안에 이미지뷰 있음.
+        locationName = view.subviews[0].subviews[1] as! UILabel    // table : 저기안에 테이블있음.
+        locationAddress = view.subviews[0].subviews[2] as! UILabel
         view.frame = bounds
         view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         self.addSubview(view);

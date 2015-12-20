@@ -19,7 +19,7 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        for i in 0 ... 1 {
+        for i in 0 ... 10 {
             items.append(i)
         }
     }
@@ -41,32 +41,31 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
     }
     
     func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
-//        var label: UILabel
+        var label: UILabel
         var itemView: UIImageView!
         
         if (view == nil) {
             // 이부분에서 이미지 쓰지말고 임의의 UIView 컨버팅해서 가져와야됨
-            var my = ThumbnailCardView(frame: CGRectMake(200, 200, 600, 600))
+            let my = ThumbnailCardView(frame: CGRectMake(0, 0, 300, 500))
             UIGraphicsBeginImageContext(my.view.bounds.size);
             my.view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
-            var screenShot = UIGraphicsGetImageFromCurrentImageContext();
+            let screenShot = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
             
-            itemView = UIImageView(frame: CGRect(x: 100, y: 100, width: 300, height: 400))
+            itemView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
             itemView.image = screenShot;
-            //itemView.image = UIImage(contentsOfFile: String(ThumbnailCardView(frame: CGRectMake(100, 100, 200, 200))))
 
-            //itemView.contentMode = .Center
-//            label = UILabel(frame: itemView.bounds)
-//            label.backgroundColor = UIColor.clearColor()
-//            label.textAlignment = .Center
-//            label.font = label.font.fontWithSize(50)
-//            label.tag = 1
-//            itemView.addSubview(label)
+            itemView.contentMode = .Center
+            label = UILabel(frame: itemView.bounds)
+            label.backgroundColor = UIColor.clearColor()
+            label.textAlignment = .Center
+            label.font = label.font.fontWithSize(50)
+            label.tag = 1
+            itemView.addSubview(label)
         }
         else {
-            //itemView = view as! UIImageView
-//            label = itemView.viewWithTag(1) as! UILabel!
+            itemView = view as! UIImageView
+            label = itemView.viewWithTag(1) as! UILabel!
         }
         return itemView
     }
