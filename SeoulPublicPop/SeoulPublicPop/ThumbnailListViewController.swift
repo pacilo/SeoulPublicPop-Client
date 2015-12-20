@@ -48,7 +48,7 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
             // 이부분에서 이미지 쓰지말고 임의의 UIView 컨버팅해서 가져와야됨
             itemView = UIImageView(frame: CGRect(x: 20, y: 20, width: 100, height: 400))
 
-            itemView.image = UIImage(contentsOfFile: String(ThumbnailListView(frame: CGRectMake(100, 100, 200, 200))))
+            itemView.image = UIImage(contentsOfFile: String(ThumbnailCardView(frame: CGRectMake(100, 100, 200, 200))))
 
             itemView.contentMode = .Center
 //            label = UILabel(frame: itemView.bounds)

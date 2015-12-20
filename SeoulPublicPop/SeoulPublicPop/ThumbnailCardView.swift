@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class ThumbnailListView: UIView {
+@IBDesignable class ThumbnailCardView: UIView {
 
     @IBOutlet weak var thumbnailImage: UIImageView!
     @IBOutlet weak var thumbnailInfoTable: UITableView!
