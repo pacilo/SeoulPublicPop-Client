@@ -103,10 +103,10 @@ class CategoryListLayoutDraw: UICollectionViewLayout {
                 return 100.0
             }
             else if MY_DEVICE == IS_IPHONE_5 {
-                return 105.0
+                return 145.0
             }
             else if MY_DEVICE == IS_IPHONE_6 {
-                return 140.0
+                return 130.0
             }
             else {
                 return 115.0
