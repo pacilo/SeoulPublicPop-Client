@@ -37,6 +37,24 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
             self.carousel.insertItemAtIndex(i, animated: true)
         }
         
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: "detailViewCall")
+        carousel.addGestureRecognizer(tapRecognizer)
+    }
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        // 이곳에 디테일뷰로 넘겨줄 정보를 정의해야함!
+    }
+    
+    func detailViewCall() {
+        if (true/* priority key identifier */) {
+            print("SEGUE!")
+            self.performSegueWithIdentifier("SegueOfDetailView", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,6 +82,12 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
             
             itemView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
 
+            itemView.image = screenShot
+            itemView.layer.masksToBounds = false
+            itemView.layer.shadowOffset = CGSizeMake(-15, 20)
+            itemView.layer.shadowRadius = 5
+            itemView.layer.shadowOpacity = 0.5
+            
             itemView.contentMode = .Center
             itemView.image = screenShot;
         }
@@ -81,15 +105,5 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
         return value
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

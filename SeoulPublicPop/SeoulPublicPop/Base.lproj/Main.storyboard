@@ -98,9 +98,11 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlY-pS-DD7" customClass="iCarousel">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="dataSource" destination="OtM-xe-nWT" id="vbl-lR-aUy"/>
                                     <outlet property="delegate" destination="OtM-xe-nWT" id="rfj-wK-WSd"/>
+                                    <outletCollection property="gestureRecognizers" destination="WJ6-va-o7k" appends="YES" id="sjR-zZ-ME1"/>
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRX-b5-bRf">
@@ -165,6 +167,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYv-b9-r77" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="lIg-eB-tx5" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="up" id="WJ6-va-o7k">
+                    <connections>
+                        <segue destination="fBH-ep-GsL" kind="show" identifier="DetailViewSegue" id="qkw-g6-A6j"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2403" y="369"/>
         </scene>
