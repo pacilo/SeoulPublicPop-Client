@@ -52,3 +52,6 @@ fastlane/screenshots
 
 # Personal Projecti
 Products/
+SeoulPublicPop-Client-Bridging-Header.h
+SeoulPublicPop/iCarousel.h
+SeoulPublicPop/iCarousel.m

@@ -21,7 +21,6 @@
 		AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C61C06379B00BF1405 /* CategoryList.swift */; };
 		AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */; };
 		AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */; };
-		AFAF507C1C27298400B76F7D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAF50771C27298400B76F7D /* iCarousel.m */; };
 		AFAF507D1C27298400B76F7D /* ThumbnailCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFAF50791C27298400B76F7D /* ThumbnailCard.xib */; };
 		AFAF507E1C27298400B76F7D /* ThumbnailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF507A1C27298400B76F7D /* ThumbnailListView.swift */; };
 		AFAF507F1C27298400B76F7D /* ThumbnailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF507B1C27298400B76F7D /* ThumbnailListViewController.swift */; };
@@ -33,6 +32,7 @@
 		CD5302BD1C26CD39009F55F3 /* SectorPyramid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5302BC1C26CD39009F55F3 /* SectorPyramid.swift */; };
 		CD5302C01C26E4F3009F55F3 /* PPMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5302BE1C26E4F3009F55F3 /* PPMapAnnotation.swift */; };
 		CD5302C11C26E4F3009F55F3 /* PPMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5302BF1C26E4F3009F55F3 /* PPMapAnnotationView.swift */; };
+		CD582FF41C272DB600333191 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD582FF31C272DB600333191 /* iCarousel.m */; };
 		CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD637E821C257C6400094082 /* SemiDetailData.swift */; };
 		CD6BC7B71C267A65004634D8 /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BC7B61C267A64004634D8 /* Sector.swift */; };
 		CD6BC7BB1C2685F9004634D8 /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BC7BA1C2685F9004634D8 /* Local.swift */; };
@@ -55,14 +55,14 @@
 		AF0178581C247C0F007577F4 /* LocationInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LocationInfo.plist; sourceTree = "<group>"; };
 		AF01785C1C24967F007577F4 /* LocalSearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchModel.swift; sourceTree = "<group>"; };
 		AF01785E1C2499A1007577F4 /* LocalSearchList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchList.swift; sourceTree = "<group>"; };
-		AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulPublicPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF74939C1C0630FA00BF1405 /* SeoulPublicPop-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeoulPublicPop-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF74939F1C0630FA00BF1405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7493A41C0630FA00BF1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF7493A71C0630FA00BF1405 /* SeoulPublicPop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeoulPublicPop.xcdatamodel; sourceTree = "<group>"; };
 		AF7493A91C0630FA00BF1405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF7493AC1C0630FA00BF1405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF7493AE1C0630FA00BF1405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF7493B31C0630FA00BF1405 /* SeoulPublicPopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeoulPublicPopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7493B31C0630FA00BF1405 /* SeoulPublicPop-Client.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeoulPublicPop-Client.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7493B71C0630FB00BF1405 /* SeoulPublicPopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulPublicPopTests.swift; sourceTree = "<group>"; };
 		AF7493B91C0630FB00BF1405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7493C21C0635F500BF1405 /* CategoryList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CategoryList.plist; sourceTree = "<group>"; };
@@ -70,9 +70,6 @@
 		AF7493C61C06379B00BF1405 /* CategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewCell.swift; sourceTree = "<group>"; };
-		AFAF50761C27298400B76F7D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		AFAF50771C27298400B76F7D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		AFAF50781C27298400B76F7D /* SeoulPublicPop-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SeoulPublicPop-Bridging-Header.h"; sourceTree = "<group>"; };
 		AFAF50791C27298400B76F7D /* ThumbnailCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailCard.xib; sourceTree = "<group>"; };
 		AFAF507A1C27298400B76F7D /* ThumbnailListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailListView.swift; sourceTree = "<group>"; };
 		AFAF507B1C27298400B76F7D /* ThumbnailListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailListViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +81,9 @@
 		CD5302BC1C26CD39009F55F3 /* SectorPyramid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectorPyramid.swift; sourceTree = "<group>"; };
 		CD5302BE1C26E4F3009F55F3 /* PPMapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMapAnnotation.swift; sourceTree = "<group>"; };
 		CD5302BF1C26E4F3009F55F3 /* PPMapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMapAnnotationView.swift; sourceTree = "<group>"; };
+		CD582FF11C272DB600333191 /* SeoulPublicPop-Client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeoulPublicPop-Client-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD582FF21C272DB600333191 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		CD582FF31C272DB600333191 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		CD637E821C257C6400094082 /* SemiDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiDetailData.swift; sourceTree = "<group>"; };
 		CD6BC7B61C267A64004634D8 /* Sector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sector.swift; sourceTree = "<group>"; };
 		CD6BC7BA1C2685F9004634D8 /* Local.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
@@ -145,8 +145,8 @@
 		AF74939D1C0630FA00BF1405 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */,
-				AF7493B31C0630FA00BF1405 /* SeoulPublicPopTests.xctest */,
+				AF74939C1C0630FA00BF1405 /* SeoulPublicPop-Client.app */,
+				AF7493B31C0630FA00BF1405 /* SeoulPublicPop-Client.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,12 +177,12 @@
 		AFAF50801C27298800B76F7D /* ThumbnailList */ = {
 			isa = PBXGroup;
 			children = (
-				AFAF50761C27298400B76F7D /* iCarousel.h */,
-				AFAF50771C27298400B76F7D /* iCarousel.m */,
-				AFAF50781C27298400B76F7D /* SeoulPublicPop-Bridging-Header.h */,
+				CD582FF21C272DB600333191 /* iCarousel.h */,
+				CD582FF31C272DB600333191 /* iCarousel.m */,
 				AFAF50791C27298400B76F7D /* ThumbnailCard.xib */,
 				AFAF507A1C27298400B76F7D /* ThumbnailListView.swift */,
 				AFAF507B1C27298400B76F7D /* ThumbnailListViewController.swift */,
+				CD582FF11C272DB600333191 /* SeoulPublicPop-Client-Bridging-Header.h */,
 			);
 			name = ThumbnailList;
 			sourceTree = "<group>";
@@ -254,9 +254,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF74939B1C0630FA00BF1405 /* SeoulPublicPop */ = {
+		AF74939B1C0630FA00BF1405 /* SeoulPublicPop-Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF7493BC1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPop" */;
+			buildConfigurationList = AF7493BC1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPop-Client" */;
 			buildPhases = (
 				AF7493981C0630FA00BF1405 /* Sources */,
 				AF7493991C0630FA00BF1405 /* Frameworks */,
@@ -266,14 +266,14 @@
 			);
 			dependencies = (
 			);
-			name = SeoulPublicPop;
+			name = "SeoulPublicPop-Client";
 			productName = SeoulPublicPop;
-			productReference = AF74939C1C0630FA00BF1405 /* SeoulPublicPop.app */;
+			productReference = AF74939C1C0630FA00BF1405 /* SeoulPublicPop-Client.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AF7493B21C0630FA00BF1405 /* SeoulPublicPopTests */ = {
+		AF7493B21C0630FA00BF1405 /* SeoulPublicPop-ClientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF7493BF1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPopTests" */;
+			buildConfigurationList = AF7493BF1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPop-ClientTests" */;
 			buildPhases = (
 				AF7493AF1C0630FA00BF1405 /* Sources */,
 				AF7493B01C0630FA00BF1405 /* Frameworks */,
@@ -284,9 +284,9 @@
 			dependencies = (
 				AF7493B51C0630FA00BF1405 /* PBXTargetDependency */,
 			);
-			name = SeoulPublicPopTests;
+			name = "SeoulPublicPop-ClientTests";
 			productName = SeoulPublicPopTests;
-			productReference = AF7493B31C0630FA00BF1405 /* SeoulPublicPopTests.xctest */;
+			productReference = AF7493B31C0630FA00BF1405 /* SeoulPublicPop-Client.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -313,7 +313,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AF7493971C0630FA00BF1405 /* Build configuration list for PBXProject "SeoulPublicPop" */;
+			buildConfigurationList = AF7493971C0630FA00BF1405 /* Build configuration list for PBXProject "SeoulPublicPop-Client" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -326,8 +326,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF74939B1C0630FA00BF1405 /* SeoulPublicPop */,
-				AF7493B21C0630FA00BF1405 /* SeoulPublicPopTests */,
+				AF74939B1C0630FA00BF1405 /* SeoulPublicPop-Client */,
+				AF7493B21C0630FA00BF1405 /* SeoulPublicPop-ClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -377,11 +377,11 @@
 				CD6BC7BB1C2685F9004634D8 /* Local.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
-				AFAF507C1C27298400B76F7D /* iCarousel.m in Sources */,
 				CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */,
 				CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */,
 				AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */,
 				AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */,
+				CD582FF41C272DB600333191 /* iCarousel.m in Sources */,
 				AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */,
 				AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */,
 			);
@@ -400,7 +400,7 @@
 /* Begin PBXTargetDependency section */
 		AF7493B51C0630FA00BF1405 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AF74939B1C0630FA00BF1405 /* SeoulPublicPop */;
+			target = AF74939B1C0630FA00BF1405 /* SeoulPublicPop-Client */;
 			targetProxy = AF7493B41C0630FA00BF1405 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -516,7 +516,8 @@
 				INFOPLIST_FILE = SeoulPublicPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPop;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SeoulPublicPop-Client";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeoulPublicPop/SeoulPublicPop-Client-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -529,7 +530,8 @@
 				INFOPLIST_FILE = SeoulPublicPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPop;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SeoulPublicPop-Client";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeoulPublicPop/SeoulPublicPop-Client-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -540,8 +542,8 @@
 				INFOPLIST_FILE = SeoulPublicPopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPopTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeoulPublicPop.app/SeoulPublicPop";
+				PRODUCT_NAME = "SeoulPublicPop-Client";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeoulPublicPop-Client.app/SeoulPublicPop-Client";
 			};
 			name = Debug;
 		};
@@ -552,15 +554,15 @@
 				INFOPLIST_FILE = SeoulPublicPopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPopTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeoulPublicPop.app/SeoulPublicPop";
+				PRODUCT_NAME = "SeoulPublicPop-Client";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeoulPublicPop-Client.app/SeoulPublicPop-Client";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF7493971C0630FA00BF1405 /* Build configuration list for PBXProject "SeoulPublicPop" */ = {
+		AF7493971C0630FA00BF1405 /* Build configuration list for PBXProject "SeoulPublicPop-Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF7493BA1C0630FB00BF1405 /* Debug */,
@@ -569,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF7493BC1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPop" */ = {
+		AF7493BC1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPop-Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF7493BD1C0630FB00BF1405 /* Debug */,
@@ -578,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF7493BF1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPopTests" */ = {
+		AF7493BF1C0630FB00BF1405 /* Build configuration list for PBXNativeTarget "SeoulPublicPop-ClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF7493C01C0630FB00BF1405 /* Debug */,
