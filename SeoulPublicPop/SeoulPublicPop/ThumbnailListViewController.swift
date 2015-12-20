@@ -46,11 +46,17 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
         
         if (view == nil) {
             // 이부분에서 이미지 쓰지말고 임의의 UIView 컨버팅해서 가져와야됨
-            itemView = UIImageView(frame: CGRect(x: 20, y: 20, width: 100, height: 400))
+            var my = ThumbnailCardView(frame: CGRectMake(200, 200, 600, 600))
+            UIGraphicsBeginImageContext(my.view.bounds.size);
+            my.view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+            var screenShot = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            itemView = UIImageView(frame: CGRect(x: 100, y: 100, width: 300, height: 400))
+            itemView.image = screenShot;
+            //itemView.image = UIImage(contentsOfFile: String(ThumbnailCardView(frame: CGRectMake(100, 100, 200, 200))))
 
-            itemView.image = UIImage(contentsOfFile: String(ThumbnailCardView(frame: CGRectMake(100, 100, 200, 200))))
-
-            itemView.contentMode = .Center
+            //itemView.contentMode = .Center
 //            label = UILabel(frame: itemView.bounds)
 //            label.backgroundColor = UIColor.clearColor()
 //            label.textAlignment = .Center
@@ -59,7 +65,7 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
 //            itemView.addSubview(label)
         }
         else {
-            itemView = view as! UIImageView
+            //itemView = view as! UIImageView
 //            label = itemView.viewWithTag(1) as! UILabel!
         }
         return itemView

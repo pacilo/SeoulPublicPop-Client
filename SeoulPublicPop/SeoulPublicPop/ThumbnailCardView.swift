@@ -12,7 +12,7 @@ import UIKit
 
     @IBOutlet weak var thumbnailImage: UIImageView!
     @IBOutlet weak var thumbnailInfoTable: UITableView!
-    
+    var view:UIView!;
     
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -34,7 +34,9 @@ import UIKit
     func loadViewFromNib() {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "ThumbnailCard", bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        thumbnailImage = view.subviews[0] as! UIImageView       // image : 저기안에 이미지뷰 있음.
+        thumbnailInfoTable = view.subviews[1]as! UITableView    // table : 저기안에 테이블있음.
         view.frame = bounds
         view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         self.addSubview(view);
