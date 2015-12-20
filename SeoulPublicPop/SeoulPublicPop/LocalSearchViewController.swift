@@ -22,6 +22,11 @@ class LocalSearchViewController: UIViewController {
         // Do any additional setup after loading the view.
         // loadTest()
         
+        /*
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let viewController = mainStoryboard.instantiateViewControllerWithIdentifier("DetailViewController")
+        */
+        
         let tapRecognizer = UITapGestureRecognizer(target: self, action: "thumbnailViewCall")
         localImage.addGestureRecognizer(tapRecognizer)
     }

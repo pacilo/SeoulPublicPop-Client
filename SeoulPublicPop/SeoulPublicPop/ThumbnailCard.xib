@@ -20,6 +20,9 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="333" id="c5K-yV-Yks"/>
                             </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                            </userDefinedRuntimeAttributes>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjn-ja-t1L">
                             <rect key="frame" x="20" y="353" width="250" height="40"/>
@@ -51,6 +54,7 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstItem="FW7-fR-Lj3" firstAttribute="leading" secondItem="Vch-gZ-eVK" secondAttribute="leading" constant="20" id="0QE-ZH-7id"/>
                         <constraint firstItem="Bjn-ja-t1L" firstAttribute="leading" secondItem="Vch-gZ-eVK" secondAttribute="leading" constant="20" id="DvI-mo-09y"/>
@@ -62,6 +66,9 @@
                         <constraint firstItem="eWZ-Fi-u9I" firstAttribute="leading" secondItem="Vch-gZ-eVK" secondAttribute="leading" id="uql-2X-T3L"/>
                         <constraint firstAttribute="trailing" secondItem="eWZ-Fi-u9I" secondAttribute="trailing" id="vjD-Ge-3u1"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                    </userDefinedRuntimeAttributes>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="FZn-Ov-2gP"/>
