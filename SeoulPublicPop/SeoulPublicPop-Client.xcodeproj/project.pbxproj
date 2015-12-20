@@ -39,6 +39,8 @@
 		CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B231C25083200781A27 /* DataCenter.swift */; };
 		CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B241C25083200781A27 /* DataLoader.swift */; };
 		CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B251C25083200781A27 /* RequestChunk.swift */; };
+		CD97D7E61C274C3A001A7A95 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97D7E51C274C3A001A7A95 /* DetailViewController.swift */; };
+		CD97D7E81C275265001A7A95 /* DetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97D7E71C275265001A7A95 /* DetailData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		CD8C7B231C25083200781A27 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		CD8C7B241C25083200781A27 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		CD8C7B251C25083200781A27 /* RequestChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestChunk.swift; sourceTree = "<group>"; };
+		CD97D7E51C274C3A001A7A95 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CD97D7E71C275265001A7A95 /* DetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,7 @@
 				AF7493A91C0630FA00BF1405 /* Assets.xcassets */,
 				AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */,
 				AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */,
+				CD97D7E71C275265001A7A95 /* DetailData.swift */,
 				CD637E821C257C6400094082 /* SemiDetailData.swift */,
 			);
 			name = "Database & Resource";
@@ -233,6 +238,7 @@
 			children = (
 				AF74939F1C0630FA00BF1405 /* AppDelegate.swift */,
 				AF7493AE1C0630FA00BF1405 /* Info.plist */,
+				CD97D7E51C274C3A001A7A95 /* DetailViewController.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 				CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */,
 				AFAF507E1C27298400B76F7D /* ThumbnailCardView.swift in Sources */,
 				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
+				CD97D7E61C274C3A001A7A95 /* DetailViewController.swift in Sources */,
 				CD6BC7B71C267A65004634D8 /* Sector.swift in Sources */,
 				AFAF507F1C27298400B76F7D /* ThumbnailListViewController.swift in Sources */,
 				AF01785D1C24967F007577F4 /* LocalSearchModel.swift in Sources */,
@@ -387,6 +394,7 @@
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
 				CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */,
 				CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */,
+				CD97D7E81C275265001A7A95 /* DetailData.swift in Sources */,
 				AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */,
 				AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */,
 				AF1B5B241C272F64004191BC /* iCarousel.m in Sources */,
