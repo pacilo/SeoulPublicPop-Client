@@ -47,8 +47,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Local-Wait" translatesAutoresizingMaskIntoConstraints="NO" id="wZV-RD-Q6d">
+                            <imageView alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Local-Wait" translatesAutoresizingMaskIntoConstraints="NO" id="wZV-RD-Q6d">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="k7Q-hF-PrN" appends="YES" id="DQZ-6p-afb"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,8 +69,48 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qZ-r4-uiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="k7Q-hF-PrN">
+                    <connections>
+                        <segue destination="OtM-xe-nWT" kind="presentation" identifier="SegueOfThumbnailList" id="3Oh-uO-4PU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1592" y="38"/>
+        </scene>
+        <!--Thumbnail List View Controller-->
+        <scene sceneID="0WM-mD-LxJ">
+            <objects>
+                <viewController id="OtM-xe-nWT" customClass="ThumbnailListViewController" customModule="SeoulPublicPop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Jt-Xg-jtY"/>
+                        <viewControllerLayoutGuide type="bottom" id="kkv-3L-9PK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n8p-G6-zad">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRX-b5-bRf">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="lIg-eB-tx5" kind="unwind" unwindAction="close:" id="4GX-Ma-ZBm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TRX-b5-bRf" firstAttribute="centerX" secondItem="n8p-G6-zad" secondAttribute="centerX" id="Zu3-IF-0Sy"/>
+                            <constraint firstItem="TRX-b5-bRf" firstAttribute="centerY" secondItem="n8p-G6-zad" secondAttribute="centerY" id="y91-pi-OOf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exitButton" destination="TRX-b5-bRf" id="ZZI-oA-EIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYv-b9-r77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lIg-eB-tx5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="369"/>
         </scene>
         <!--Category List View Controller-->
         <scene sceneID="oLe-is-ia1">

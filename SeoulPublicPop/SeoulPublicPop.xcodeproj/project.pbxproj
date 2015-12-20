@@ -21,11 +21,12 @@
 		AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C61C06379B00BF1405 /* CategoryList.swift */; };
 		AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */; };
 		AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */; };
+		AFAF50651C2685FC00B76F7D /* ThumbnailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF50641C2685FC00B76F7D /* ThumbnailListViewController.swift */; };
+		AFAF506C1C269CC800B76F7D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAF506B1C269CC800B76F7D /* iCarousel.m */; };
 		AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */; };
 		AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */; };
 		AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */; };
 		AFDBE3941C21F4D70072B9DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDBE3931C21F4D70072B9DB /* MapKit.framework */; };
-		AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */; };
 		CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD637E821C257C6400094082 /* SemiDetailData.swift */; };
 		CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B231C25083200781A27 /* DataCenter.swift */; };
 		CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8C7B241C25083200781A27 /* DataLoader.swift */; };
@@ -61,11 +62,14 @@
 		AF7493C61C06379B00BF1405 /* CategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewCell.swift; sourceTree = "<group>"; };
+		AFAF50641C2685FC00B76F7D /* ThumbnailListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailListViewController.swift; sourceTree = "<group>"; };
+		AFAF50691C269CC800B76F7D /* SeoulPublicPop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeoulPublicPop-Bridging-Header.h"; sourceTree = "<group>"; };
+		AFAF506A1C269CC800B76F7D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		AFAF506B1C269CC800B76F7D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListLayoutDraw.swift; sourceTree = "<group>"; };
 		AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchViewController.swift; sourceTree = "<group>"; };
 		AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
 		AFDBE3931C21F4D70072B9DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkOfRequestInfo.swift; sourceTree = "<group>"; };
 		CD637E821C257C6400094082 /* SemiDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiDetailData.swift; sourceTree = "<group>"; };
 		CD8C7B231C25083200781A27 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		CD8C7B241C25083200781A27 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				AFCE8D781C06A1010024E41E /* Database & Resource */,
 				AFCE8D761C06A0DC0024E41E /* CategoryList (EntryPoint) */,
 				AFDBE3631C21F1410072B9DB /* SearchWaySelection */,
+				AFAF50681C269B1400B76F7D /* ThumbnailList */,
 			);
 			path = SeoulPublicPop;
 			sourceTree = "<group>";
@@ -149,6 +154,25 @@
 				AF7493B91C0630FB00BF1405 /* Info.plist */,
 			);
 			path = SeoulPublicPopTests;
+			sourceTree = "<group>";
+		};
+		AFAF50681C269B1400B76F7D /* ThumbnailList */ = {
+			isa = PBXGroup;
+			children = (
+				AFAF506D1C269D5700B76F7D /* iCarousel */,
+				AFAF50641C2685FC00B76F7D /* ThumbnailListViewController.swift */,
+				AFAF50691C269CC800B76F7D /* SeoulPublicPop-Bridging-Header.h */,
+			);
+			name = ThumbnailList;
+			sourceTree = "<group>";
+		};
+		AFAF506D1C269D5700B76F7D /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				AFAF506A1C269CC800B76F7D /* iCarousel.h */,
+				AFAF506B1C269CC800B76F7D /* iCarousel.m */,
+			);
+			name = iCarousel;
 			sourceTree = "<group>";
 		};
 		AFCE8D761C06A0DC0024E41E /* CategoryList (EntryPoint) */ = {
@@ -178,7 +202,6 @@
 			children = (
 				AF7493A91C0630FA00BF1405 /* Assets.xcassets */,
 				AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */,
-				AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */,
 				CD637E821C257C6400094082 /* SemiDetailData.swift */,
 			);
 			name = "Database & Resource";
@@ -256,7 +279,7 @@
 		AF7493941C0630FA00BF1405 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Pacilo's Lab";
 				TargetAttributes = {
@@ -321,18 +344,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */,
+				AFAF50651C2685FC00B76F7D /* ThumbnailListViewController.swift in Sources */,
 				AF01785F1C2499A1007577F4 /* LocalSearchList.swift in Sources */,
 				CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */,
 				CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */,
 				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
 				AF01785D1C24967F007577F4 /* LocalSearchModel.swift in Sources */,
+				AFAF506C1C269CC800B76F7D /* iCarousel.m in Sources */,
 				AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */,
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,
 				AF7493A81C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld in Sources */,
 				CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */,
 				CD8C7B261C25083200781A27 /* DataCenter.swift in Sources */,
-				AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */,
 				AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */,
 				AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */,
 				AF7493A01C0630FA00BF1405 /* AppDelegate.swift in Sources */,
@@ -464,10 +488,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SeoulPublicPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeoulPublicPop/SeoulPublicPop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -475,10 +502,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SeoulPublicPop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.ac.ssu.SeoulPublicPop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SeoulPublicPop/SeoulPublicPop-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -75,7 +75,7 @@ class CategoryListViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return categoryList.count * 2
+        return categoryList.count * 3
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -117,7 +117,7 @@ class CategoryListViewController: UICollectionViewController {
     }
     */
 
-/*
+/*  infinite scroll
     override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
     float contentOffsetWhenFullyScrolledRight = self.collectionView.frame.size.width * ([self.dataArray count] -1);
 
