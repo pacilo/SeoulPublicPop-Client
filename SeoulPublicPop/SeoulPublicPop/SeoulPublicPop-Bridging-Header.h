@@ -1,11 +1,14 @@
 //
-//  SeoulPublicPop-Bridging-Header.h
+//  Bridge.h
 //  SeoulPublicPop
 //
-//  Created by pacilo on 2015. 12. 20..
+//  Created by pacilo on 2015. 12. 21..
 //  Copyright © 2015년 Pacilo's Lab. All rights reserved.
 //
-//  Use this file to import your target's public headers that you would like to expose to Swift.
-//
+
+#ifndef Bridge_h
+#define Bridge_h
 
 #import "iCarousel.h"
+
+#endif /* Bridge_h */
