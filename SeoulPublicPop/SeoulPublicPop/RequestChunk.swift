@@ -51,3 +51,23 @@ class LocalRequest : RequestChunk{
         super.init(method: "LOCAL",idx: idx,incSize: incSize)
     }
 }
+class SectorRequest : RequestChunk{
+    var x, y : Int
+    var category : String
+    override var requestForm : [String:String] {
+        var result = super.requestForm
+        
+        result["POSX"]      = String(x);
+        result["POSY"]      = String(y);
+        result["CATEGORY"]  = category;
+        
+        return result
+    }
+    init(x : Int, y:Int,category : String, idx : Int = 0, incSize :Int = 20)
+    {
+        self.x = x
+        self.y = y
+        self.category = category
+        super.init(method: "SECTOR",idx: idx,incSize: incSize)
+    }
+}

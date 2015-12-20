@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SQd-4J-ujI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SQd-4J-ujI">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Map Search Controller-->
@@ -19,8 +19,10 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pmY-FS-z91">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <animations/>
                             </mapView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pmY-FS-z91" firstAttribute="bottom" secondItem="VgP-27-Sfo" secondAttribute="top" id="EfT-Gg-xXf"/>
@@ -30,6 +32,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="지도검색" id="H6r-2s-SVA"/>
+                    <connections>
+                        <outlet property="mapView" destination="pmY-FS-z91" id="MJ0-YA-DDi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMc-7y-A1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,8 +54,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Local-Wait" translatesAutoresizingMaskIntoConstraints="NO" id="wZV-RD-Q6d">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <animations/>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wZV-RD-Q6d" secondAttribute="trailing" id="7xo-UY-1MV"/>
@@ -75,6 +82,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YTn-9e-OnO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <collectionViewLayout key="collectionViewLayout" id="Bmj-Bm-Z5R" customClass="CategoryListLayoutDraw" customModule="SeoulPublicPop" customModuleProvider="target"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="xh5-YG-XNe" customClass="CategoryListViewCell" customModule="SeoulPublicPop" customModuleProvider="target">
@@ -86,6 +94,7 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cHD-Iw-ne5">
                                             <rect key="frame" x="0.0" y="-40" width="200" height="280"/>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="6ol-hZ-Cgl"/>
                                                 <constraint firstAttribute="height" constant="280" id="J5r-Si-hDY"/>
@@ -98,6 +107,7 @@
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yi-Em-sDf">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="200" id="i6S-7u-DVy"/>
@@ -112,6 +122,7 @@
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H55-jf-MZp">
                                             <rect key="frame" x="0.0" y="78" width="200" height="44"/>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="l6i-m9-akO"/>
                                                 <constraint firstAttribute="height" constant="44" id="mly-Pb-hry"/>
@@ -126,8 +137,10 @@
                                             </variation>
                                         </label>
                                     </subviews>
+                                    <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <animations/>
                                 <constraints>
                                     <constraint firstItem="4yi-Em-sDf" firstAttribute="top" secondItem="xh5-YG-XNe" secondAttribute="top" id="3cI-r8-W9w"/>
                                     <constraint firstItem="cHD-Iw-ne5" firstAttribute="centerY" secondItem="xh5-YG-XNe" secondAttribute="centerY" id="605-Ry-GXz"/>
@@ -178,6 +191,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7AI-s5-sZQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -197,6 +211,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2SA-DO-1wF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

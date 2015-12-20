@@ -29,21 +29,6 @@ class Local : Hashable {
         maxsize = -1;
         dirty = false;
     }
-    func addList(obj : AnyObject)
-    {
-        var num = 0;
-        while(num < obj.count)
-        {
-            if let newsemi = obj[num++]
-            {
-                data.append(SemiDetail(ResData: newsemi))
-            }
-            else
-            {
-                break;
-            }
-        }
-    }
     func isfull() -> Bool{
         if maxsize < chunk.requestIdx
         {

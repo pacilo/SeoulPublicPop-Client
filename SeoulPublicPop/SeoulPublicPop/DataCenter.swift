@@ -39,30 +39,9 @@ class DataCenter {
         locals["동작구"]!["체육시설"] = dummylocal
     }
     /*
-        데이터 콜을 초기화한다. 데이터 요청을 최초로 요청할 때 사용한다. 
-        만약 이전에 해당하는 데이터 콜을 초기화했다면 가져왔던 데이터를 삭제하고 다시 시작할 준비를 한다.
-        데이터를 초기화 -> 데이터 불러옴
+        데이터를 불러온다.
+        만약 데이터가 로컬에 없으면 서버에 요청해서 불러온다.
     */
-    func initDataCall(local:String, category : String)
-    {
-        let newlocal = Local(local:local,category:category)
-        
-        locals[category] = [:]
-        locals[category]![local] = newlocal
-        
-        let loader = DataLoader()
-        
-        loader.Start(locals[category]![local]!.chunk,callBack: {(data : AnyObject) -> () in
-            if let lo = self.locals[category]?[local]
-            {
-                lo.dirty = false
-                lo.maxsize = data["SIZE"] as! Int;
-                let list = data["SEMIS"]!
-
-                lo.addList(list! as AnyObject)
-            }
-        })
-    }
     func getData(local:String, category : String, idx:Int ,callback : (data : [SemiDetail])->()) -> Bool
     {
         if locals[category] == nil
@@ -96,7 +75,7 @@ class DataCenter {
                 mylocal.dirty = false
                 mylocal.maxsize = data["SIZE"] as! Int;
                 let list = data["SEMIS"]!
-                mylocal.addList(list! as AnyObject)
+                mylocal.data.appendContentsOf(SemiDetail.makeSemiList(list! as AnyObject))
                 callback(data: mylocal.getData(idx)!)
             })
             return true
@@ -104,9 +83,14 @@ class DataCenter {
         print("도달불가")
         return false
     }
-    func getData(Sector : sector) -> [SemiDetail]?
+    func getData(category : String,callback : (data : [SemiDetail])->()) -> Bool
     {
-        return nil
+        let loader = DataLoader()
+        
+        loader.Start(SectorRequest(x: 0, y: 0, category: category), callBack:  {(data:AnyObject)->() in
+            callback(data: SemiDetail.makeSemiList(data["LIST"]!! as AnyObject))
+        })
+        return true
     }
     
     func getDataFromServer(local:String, category : String, callback : (data:AnyObject)->())

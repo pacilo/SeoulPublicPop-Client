@@ -41,12 +41,9 @@ class DataLoader : NSObject, NSXMLParserDelegate {
         
         request1.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(reqParam.requestForm as NSDictionary,  options:  [])
         request1.HTTPMethod = "POST"
-        print(request1.HTTPBody)
         let task = session.dataTaskWithRequest(request1, completionHandler: {data, response, error -> Void in
             let result = try! NSJSONSerialization.JSONObjectWithData(data!, options: [])
-            print("mydata : " + String(result["category"]))
             self.completeMethod(result);
-            print(error?.code)
         })
         
         task.resume()

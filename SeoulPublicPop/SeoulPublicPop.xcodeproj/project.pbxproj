@@ -26,6 +26,9 @@
 		AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */; };
 		AFDBE3941C21F4D70072B9DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDBE3931C21F4D70072B9DB /* MapKit.framework */; };
 		AFDBE3961C2233930072B9DB /* ChunkOfRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */; };
+		CD5302BD1C26CD39009F55F3 /* SectorPyramid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5302BC1C26CD39009F55F3 /* SectorPyramid.swift */; };
+		CD5302C01C26E4F3009F55F3 /* PPMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5302BE1C26E4F3009F55F3 /* PPMapAnnotation.swift */; };
+		CD5302C11C26E4F3009F55F3 /* PPMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5302BF1C26E4F3009F55F3 /* PPMapAnnotationView.swift */; };
 		CD637E831C257C6400094082 /* SemiDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD637E821C257C6400094082 /* SemiDetailData.swift */; };
 		CD6BC7B71C267A65004634D8 /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BC7B61C267A64004634D8 /* Sector.swift */; };
 		CD6BC7BB1C2685F9004634D8 /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BC7BA1C2685F9004634D8 /* Local.swift */; };
@@ -68,6 +71,9 @@
 		AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
 		AFDBE3931C21F4D70072B9DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkOfRequestInfo.swift; sourceTree = "<group>"; };
+		CD5302BC1C26CD39009F55F3 /* SectorPyramid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectorPyramid.swift; sourceTree = "<group>"; };
+		CD5302BE1C26E4F3009F55F3 /* PPMapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMapAnnotation.swift; sourceTree = "<group>"; };
+		CD5302BF1C26E4F3009F55F3 /* PPMapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMapAnnotationView.swift; sourceTree = "<group>"; };
 		CD637E821C257C6400094082 /* SemiDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiDetailData.swift; sourceTree = "<group>"; };
 		CD6BC7B61C267A64004634D8 /* Sector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sector.swift; sourceTree = "<group>"; };
 		CD6BC7BA1C2685F9004634D8 /* Local.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
@@ -109,6 +115,8 @@
 		AF01785B1C24961B007577F4 /* MapSearch */ = {
 			isa = PBXGroup;
 			children = (
+				CD5302BE1C26E4F3009F55F3 /* PPMapAnnotation.swift */,
+				CD5302BF1C26E4F3009F55F3 /* PPMapAnnotationView.swift */,
 				AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */,
 			);
 			name = MapSearch;
@@ -214,6 +222,7 @@
 				CD8C7B231C25083200781A27 /* DataCenter.swift */,
 				CD8C7B241C25083200781A27 /* DataLoader.swift */,
 				CD8C7B251C25083200781A27 /* RequestChunk.swift */,
+				CD5302BC1C26CD39009F55F3 /* SectorPyramid.swift */,
 			);
 			name = NetWork;
 			sourceTree = "<group>";
@@ -326,14 +335,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5302BD1C26CD39009F55F3 /* SectorPyramid.swift in Sources */,
 				AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */,
 				AF01785F1C2499A1007577F4 /* LocalSearchList.swift in Sources */,
+				CD5302C11C26E4F3009F55F3 /* PPMapAnnotationView.swift in Sources */,
 				CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */,
 				CD8C7B271C25083200781A27 /* DataLoader.swift in Sources */,
 				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
 				CD6BC7B71C267A65004634D8 /* Sector.swift in Sources */,
 				AF01785D1C24967F007577F4 /* LocalSearchModel.swift in Sources */,
 				AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */,
+				CD5302C01C26E4F3009F55F3 /* PPMapAnnotation.swift in Sources */,
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
 				CD6BC7BB1C2685F9004634D8 /* Local.swift in Sources */,
 				AF7493C71C06379B00BF1405 /* CategoryList.swift in Sources */,

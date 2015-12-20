@@ -28,7 +28,6 @@ struct SemiDetail
     
     init(ResData:AnyObject)
     {
-        print(ResData);
         idx      = ResData["IDX"] as! Int!
         category = ResData["CATEGORY"] as! String
         
@@ -64,6 +63,24 @@ struct SemiDetail
         
         let json = try! NSJSONSerialization.JSONObjectWithData(result, options: [])
         return SemiDetail(ResData: json);
+    }
+    static func makeSemiList(obj : AnyObject) -> [SemiDetail]
+    {
+        var num = 0;
+        var data:[SemiDetail] = []
+        while(num < obj.count)
+        {
+            if let newsemi = obj[num++]
+            {
+                data.append(SemiDetail(ResData: newsemi))
+            }
+            else
+            {
+                break;
+            }
+        }
+        
+        return data;
     }
 }
 struct sector
