@@ -71,3 +71,24 @@ class SectorRequest : RequestChunk{
         super.init(method: "SECTOR",idx: idx,incSize: incSize)
     }
 }
+
+
+class DetailRequest : RequestChunk{
+    var id : Int
+    var category : String
+    override var requestForm : [String:String] {
+        var result = super.requestForm
+        
+        result["ID"]      = String(id);
+        result["CATEGORY"]  = category;
+        
+        return result
+    }
+    init(id:Int, category : String)
+    {
+        self.category = category
+        self.id = id
+        super.init(method: "DETAIL",idx: 0,incSize: 0)
+    }
+}
+

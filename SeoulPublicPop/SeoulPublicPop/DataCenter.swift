@@ -92,6 +92,18 @@ class DataCenter {
         })
         return true
     }
+    func getData(idx : Int,category : String) -> Detail
+    {
+        var result:Detail? = nil
+        
+        let loader = DataLoader()
+        
+        loader.Start(DetailRequest(id: idx,category:category), callBack:  {(data:AnyObject)->() in
+            result = Detail(ResData: data)
+        })
+        while(result != nil) {}
+        return result!
+    }
     
     func getDataFromServer(local:String, category : String, callback : (data:AnyObject)->())
     {

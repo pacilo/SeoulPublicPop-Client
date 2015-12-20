@@ -83,12 +83,3 @@ struct SemiDetail
         return data;
     }
 }
-struct sector
-{
-    var sector_idx  : (x:Int, y:Int)
-    var sector_list : [SemiDetail]
-}
-struct Detail
-{
-    
-}
