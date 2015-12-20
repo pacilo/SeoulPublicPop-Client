@@ -10,6 +10,78 @@
 
 import UIKit
 
+
+var IS_IPAD: Bool {
+get {
+    if (UIDevice.currentDevice().userInterfaceIdiom == .Pad) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+}
+
+var IS_IPHONE: Bool {
+get {
+    if (UIDevice.currentDevice().userInterfaceIdiom == .Phone) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+}
+
+var IS_RETINA: Bool {
+get {
+    if (UIScreen.mainScreen().scale >= 2.0) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+}
+
+let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
+let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
+
+var SCREEN_MAX_LENGTH: CGFloat {
+get {
+    return SCREEN_WIDTH < SCREEN_HEIGHT ? SCREEN_HEIGHT : SCREEN_WIDTH
+}
+}
+
+var SCREEN_MIN_LENGTH: CGFloat {
+get {
+    return SCREEN_WIDTH < SCREEN_HEIGHT ? SCREEN_HEIGHT : SCREEN_WIDTH
+}
+}
+
+let IS_IPHONE_4_OR_LESS: Float = 4.0
+let IS_IPHONE_5: Float = 5.0
+let IS_IPHONE_6: Float = 6.0
+let IS_IPHONE_6P: Float = 6.5
+
+var MY_DEVICE: Float {
+get {
+    if (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0) {
+        return IS_IPHONE_6P
+    }
+    else if (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0) {
+        return IS_IPHONE_6
+    }
+    else if (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0) {
+        return IS_IPHONE_5
+    }
+    else {
+        return IS_IPHONE_4_OR_LESS
+    }
+}
+}
+
+
 /* The heights are declared as constants outside of the class so they can be easily referenced elsewhere */
 struct CategoryLayoutConstants {
     struct Cell {
@@ -25,7 +97,22 @@ class CategoryListLayoutDraw: UICollectionViewLayout {
     // MARK: Properties and Variables
     
     /* The amount the user needs to scroll before the featured cell changes */
-    let dragOffset: CGFloat = 180.0
+    var dragOffset: CGFloat {
+        get {
+            if MY_DEVICE == IS_IPHONE_4_OR_LESS {
+                return 100.0
+            }
+            else if MY_DEVICE == IS_IPHONE_5 {
+                return 145.0
+            }
+            else if MY_DEVICE == IS_IPHONE_6 {
+                return 130.0
+            }
+            else {
+                return 115.0
+            }
+        }
+    }
         
     var cache = [UICollectionViewLayoutAttributes]()
     
@@ -69,7 +156,7 @@ class CategoryListLayoutDraw: UICollectionViewLayout {
     
     /* Return the size of all the content in the collection view */
     override func collectionViewContentSize() -> CGSize {
-        let contentHeight = CGFloat(numberOfItems - 1) * dragOffset
+        let contentHeight = CGFloat(numberOfItems - 1) * dragOffset + CategoryLayoutConstants.Cell.featuredHeight
         return CGSize(width: width, height: contentHeight)
     }
     

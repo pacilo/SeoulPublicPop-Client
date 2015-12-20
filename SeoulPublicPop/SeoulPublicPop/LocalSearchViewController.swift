@@ -13,13 +13,23 @@ class LocalSearchViewController: UIViewController {
     let locationInfoList = LocationInfoList.getLocationInfo()
     
     @IBOutlet weak var localImage: UIImageView!
-    var categoryType: String!
+    var categoryType: String?
+    var selectedName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         // loadTest()
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: "thumbnailViewCall")
+        localImage.addGestureRecognizer(tapRecognizer)
+    }
+    
+    func thumbnailViewCall() {
+        if selectedName != nil {
+            self.performSegueWithIdentifier("SegueOfThumbnailList", sender: self)
+        }
     }
     
     func loadTest() {
@@ -52,10 +62,13 @@ class LocalSearchViewController: UIViewController {
         
         // do sth...
         if let resultName = touchedPositionWasInsideCheck(realPosition) {
+            selectedName = resultName
             print(resultName)
-            return
         }
-        print("Fail")
+        else {
+            selectedName = nil
+            print("Not Found")
+        }
     }
 
     func touchedPositionWasInsideCheck(position: CGPoint) -> String? {
@@ -96,14 +109,21 @@ class LocalSearchViewController: UIViewController {
         return Float(value1 - value2)
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "SegueOfThumbnailList" {
+            let thumbnailViewController = segue.destinationViewController as! ThumbnailListViewController
+            thumbnailViewController.categoryType = categoryType
+            thumbnailViewController.locationName = selectedName
+        }
     }
-    */
+    
+    @IBAction func close(segue: UIStoryboardSegue) {
+        
+    }
 
 }
