@@ -22,9 +22,9 @@
 		AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */; };
 		AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */; };
 		AFAF50651C2685FC00B76F7D /* ThumbnailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF50641C2685FC00B76F7D /* ThumbnailListViewController.swift */; };
-		AFAF506C1C269CC800B76F7D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAF506B1C269CC800B76F7D /* iCarousel.m */; };
 		AFAF50731C26FE2800B76F7D /* ThumbnailCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFAF50721C26FE2800B76F7D /* ThumbnailCard.xib */; };
 		AFAF50751C26FEDA00B76F7D /* ThumbnailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF50741C26FEDA00B76F7D /* ThumbnailListView.swift */; };
+		AFAF50851C272B5A00B76F7D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAF50841C272B5A00B76F7D /* iCarousel.m */; };
 		AFCE8D741C0698560024E41E /* CategoryListLayoutDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */; };
 		AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */; };
 		AFDBE3611C21F12F0072B9DB /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */; };
@@ -67,11 +67,11 @@
 		AF7493C81C063A1B00BF1405 /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		AF7493CA1C0683D300BF1405 /* CategoryListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewCell.swift; sourceTree = "<group>"; };
 		AFAF50641C2685FC00B76F7D /* ThumbnailListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailListViewController.swift; sourceTree = "<group>"; };
-		AFAF50691C269CC800B76F7D /* SeoulPublicPop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeoulPublicPop-Bridging-Header.h"; sourceTree = "<group>"; };
-		AFAF506A1C269CC800B76F7D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		AFAF506B1C269CC800B76F7D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		AFAF50721C26FE2800B76F7D /* ThumbnailCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailCard.xib; sourceTree = "<group>"; };
 		AFAF50741C26FEDA00B76F7D /* ThumbnailListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailListView.swift; sourceTree = "<group>"; };
+		AFAF50831C272B5A00B76F7D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		AFAF50841C272B5A00B76F7D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		AFAF50871C272B9E00B76F7D /* SeoulPublicPop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeoulPublicPop-Bridging-Header.h"; sourceTree = "<group>"; };
 		AFCE8D731C0698560024E41E /* CategoryListLayoutDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListLayoutDraw.swift; sourceTree = "<group>"; };
 		AFDBE35E1C21F1220072B9DB /* LocalSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchViewController.swift; sourceTree = "<group>"; };
 		AFDBE3601C21F12F0072B9DB /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
@@ -167,19 +167,19 @@
 		AFAF50681C269B1400B76F7D /* ThumbnailList */ = {
 			isa = PBXGroup;
 			children = (
-				AFAF506D1C269D5700B76F7D /* iCarousel */,
-				AFAF50691C269CC800B76F7D /* SeoulPublicPop-Bridging-Header.h */,
+				AFAF50861C272B6000B76F7D /* iCarousel */,
 				AFAF50641C2685FC00B76F7D /* ThumbnailListViewController.swift */,
 				AFAF50741C26FEDA00B76F7D /* ThumbnailListView.swift */,
+				AFAF50871C272B9E00B76F7D /* SeoulPublicPop-Bridging-Header.h */,
 			);
 			name = ThumbnailList;
 			sourceTree = "<group>";
 		};
-		AFAF506D1C269D5700B76F7D /* iCarousel */ = {
+		AFAF50861C272B6000B76F7D /* iCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				AFAF506A1C269CC800B76F7D /* iCarousel.h */,
-				AFAF506B1C269CC800B76F7D /* iCarousel.m */,
+				AFAF50831C272B5A00B76F7D /* iCarousel.h */,
+				AFAF50841C272B5A00B76F7D /* iCarousel.m */,
 			);
 			name = iCarousel;
 			sourceTree = "<group>";
@@ -357,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF7493CB1C0683D300BF1405 /* CategoryListViewCell.swift in Sources */,
+				AFAF50851C272B5A00B76F7D /* iCarousel.m in Sources */,
 				AFAF50651C2685FC00B76F7D /* ThumbnailListViewController.swift in Sources */,
 				AF01785F1C2499A1007577F4 /* LocalSearchList.swift in Sources */,
 				CD8C7B281C25083200781A27 /* RequestChunk.swift in Sources */,
@@ -364,7 +365,6 @@
 				AF7493C91C063A1B00BF1405 /* CategoryListViewController.swift in Sources */,
 				CD6BC7B71C267A65004634D8 /* Sector.swift in Sources */,
 				AF01785D1C24967F007577F4 /* LocalSearchModel.swift in Sources */,
-				AFAF506C1C269CC800B76F7D /* iCarousel.m in Sources */,
 				AFDBE35F1C21F1220072B9DB /* LocalSearchViewController.swift in Sources */,
 				AF7493C51C06373500BF1405 /* CategoryModel.swift in Sources */,
 				CD6BC7BB1C2685F9004634D8 /* Local.swift in Sources */,
