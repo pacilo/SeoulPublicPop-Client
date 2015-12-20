@@ -8,10 +8,12 @@
 
 import UIKit
 import MapKit
+import Foundation
 
 class PPMapAnnotation : NSObject, MKAnnotation {
     var coordinate : CLLocationCoordinate2D
     var title : String?
+    var realtitle : String?
     var subtitle : String?
     var category : String?
     var id : String?
@@ -23,6 +25,7 @@ class PPMapAnnotation : NSObject, MKAnnotation {
     init(coordinate : CLLocationCoordinate2D, title:String, subtitle:String, category : String, id : String)
     {
         self.coordinate = coordinate
+        self.realtitle = title
         self.title = title
         self.subtitle = subtitle
         self.category = category
@@ -56,6 +59,11 @@ class PPMapAnnotation : NSObject, MKAnnotation {
         {
             v.countlabel!.text = String(getMyCount())
         }
+         title = realtitle! + "... 외 " + String(getMyCount())
+        if child.count == 0
+        {
+            title = realtitle
+        }
     }
     func addChildAnnotation(c : PPMapAnnotation )
     {
@@ -66,6 +74,7 @@ class PPMapAnnotation : NSObject, MKAnnotation {
         {
             v.countlabel!.text = String(getMyCount())
         }
+        title = realtitle! + "... 외 " + String(getMyCount())
     }
     func getMyCount() -> Int
     {

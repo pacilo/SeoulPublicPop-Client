@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,6 +16,7 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-3" translatesAutoresizingMaskIntoConstraints="NO" id="eWZ-Fi-u9I">
                             <rect key="frame" x="0.0" y="0.0" width="300" height="333"/>
+                            <animations/>
                             <color key="backgroundColor" red="1" green="0.020532956710662131" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="333" id="c5K-yV-Yks"/>
@@ -23,14 +24,15 @@
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjn-ja-t1L">
                             <rect key="frame" x="20" y="353" width="250" height="40"/>
+                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="250" id="Hew-Eu-w7q"/>
                                 <constraint firstAttribute="width" constant="200" id="SOS-ot-kig"/>
                                 <constraint firstAttribute="height" constant="40" id="fRP-Tb-aRh"/>
                                 <constraint firstAttribute="height" constant="40" id="kVZ-Wh-65b"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="40"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                             <variation key="default">
                                 <mask key="constraints">
@@ -41,15 +43,17 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FW7-fR-Lj3">
                             <rect key="frame" x="20" y="398" width="250" height="20"/>
+                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="1Id-45-5ex"/>
                                 <constraint firstAttribute="width" constant="250" id="kv3-5Y-xUE"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="FW7-fR-Lj3" firstAttribute="leading" secondItem="Vch-gZ-eVK" secondAttribute="leading" constant="20" id="0QE-ZH-7id"/>
@@ -70,6 +74,7 @@
                     </variation>
                 </view>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Vch-gZ-eVK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NB7-s0-QPi"/>

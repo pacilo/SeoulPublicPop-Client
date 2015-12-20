@@ -11,7 +11,7 @@ import UIKit
 class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarouselDelegate {
 
     @IBOutlet var carousel: iCarousel!
-    var items: [Int] = []
+    var items: [SemiDetail] = [] ;
     var wrap: Bool = true
     
     var categoryType: String!
@@ -19,16 +19,24 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        for i in 0 ... 10 {
-            items.append(i)
-        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        DataCenter.getInstance().getData(locationName, category: categoryType, idx: 0, callback: {(data: [SemiDetail]) -> () in
+            self.items = data
+            
+        })
+        sleep(2)
         // Do any additional setup after loading the view.
         carousel.type = .CoverFlow2
+        
+        for(var i = 0; i < self.items.count ; i++)
+        {
+            self.carousel.insertItemAtIndex(i, animated: true)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,31 +49,27 @@ class ThumbnailListViewController: UIViewController, iCarouselDataSource, iCarou
     }
     
     func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
-        var label: UILabel
         var itemView: UIImageView!
         
         if (view == nil) {
             // 이부분에서 이미지 쓰지말고 임의의 UIView 컨버팅해서 가져와야됨
             let my = ThumbnailCardView(frame: CGRectMake(0, 0, 300, 500))
+            my.locationName.text = items[index].title
+            my.locationAddress.text = items[index].address
+            
             UIGraphicsBeginImageContext(my.view.bounds.size);
             my.view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
             let screenShot = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
             
             itemView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
-            itemView.image = screenShot;
 
             itemView.contentMode = .Center
-            label = UILabel(frame: itemView.bounds)
-            label.backgroundColor = UIColor.clearColor()
-            label.textAlignment = .Center
-            label.font = label.font.fontWithSize(50)
-            label.tag = 1
-            itemView.addSubview(label)
+            itemView.image = screenShot;
         }
         else {
             itemView = view as! UIImageView
-            label = itemView.viewWithTag(1) as! UILabel!
+            //label = itemView.viewWithTag(1) as! UILabel!
         }
         return itemView
     }

@@ -33,9 +33,9 @@ class PPMapAnnotationView: MKAnnotationView {
         countlabel = UILabel(frame: frame)
         countlabel!.text = String((annotation as! PPMapAnnotation).getMyCount())
         countlabel!.textAlignment = NSTextAlignment.Center
-        countlabel!.textColor = UIColor(red: CGFloat(0xff)/255, green: CGFloat(0xd7)/255, blue: CGFloat(0x00)/255, alpha: 0.6)
+        countlabel!.textColor = UIColor(red: CGFloat(0xff)/255, green: CGFloat(0xd7)/255, blue: CGFloat(0x00)/255, alpha: 0.7)
         countlabel!.center = CGPointMake(frame.size.width  / 2, frame.size.height / 2);
-        self.alpha = 0.5
+        //self.alpha = 0.5
         addSubview(countlabel!)
         //   }
     }
