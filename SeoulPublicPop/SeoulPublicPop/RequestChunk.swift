@@ -11,9 +11,9 @@ class RequestChunk {
     var requestIdx:Int = 0
     var requestForm:[String:String] {
         var result : [String:String] = [:];
-        result["method"]    = requestMethod;
-        result["idx"]       = String(requestIdx);
-        
+        result["METHOD"]    = requestMethod;
+        result["IDX"]       = String(requestIdx);
+        result["INC"]       = String(incSize);
         return result
     }
     var incSize : Int = 0
@@ -39,8 +39,8 @@ class LocalRequest : RequestChunk{
     override var requestForm : [String:String] {
         var result = super.requestForm
         
-        result["local"]     = local;
-        result["category"]  = category;
+        result["LOCAL"]     = local;
+        result["CATEGORY"]  = category;
         
         return result
     }
@@ -48,6 +48,6 @@ class LocalRequest : RequestChunk{
     {
         self.local = local
         self.category = category
-        super.init(method: "local",idx: idx,incSize: incSize)
+        super.init(method: "LOCAL",idx: idx,incSize: incSize)
     }
 }
