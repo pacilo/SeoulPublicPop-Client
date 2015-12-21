@@ -21,8 +21,8 @@ class PPMapAnnotation : NSObject, MKAnnotation {
     var child : [String:PPMapAnnotation]
     var ischild : Bool
     var myview : PPMapAnnotationView?
-    
-    init(coordinate : CLLocationCoordinate2D, title:String, subtitle:String, category : String, id : String)
+    var data : SemiDetail
+    init(coordinate : CLLocationCoordinate2D, title:String, subtitle:String, category : String, id : String, sd : SemiDetail)
     {
         self.coordinate = coordinate
         self.realtitle = title
@@ -30,7 +30,7 @@ class PPMapAnnotation : NSObject, MKAnnotation {
         self.subtitle = subtitle
         self.category = category
         self.id = id
-        
+        self.data = sd
         self.child = [:]
         self.ischild = false
     }
@@ -75,6 +75,17 @@ class PPMapAnnotation : NSObject, MKAnnotation {
             v.countlabel!.text = String(getMyCount())
         }
         title = realtitle! + "... 외 " + String(getMyCount())
+    }
+    func getChildList () -> [PPMapAnnotation]
+    {
+        var result:[PPMapAnnotation] = []
+        
+        result.append(self)
+        for  c in child
+        {
+            result.appendContentsOf(c.1.getChildList())
+        }
+        return result
     }
     func getMyCount() -> Int
     {

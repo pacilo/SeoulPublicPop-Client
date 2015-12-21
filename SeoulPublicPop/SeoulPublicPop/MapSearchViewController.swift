@@ -16,6 +16,7 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate{
     var categoryType: String!
     let locationManager = CLLocationManager()
     var annotationDic : [String:PPMapAnnotation] = [:]
+    var arrayForSegue:[SemiDetail] = []
     
     
     override func viewDidLoad() {
@@ -29,12 +30,12 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate{
           mapView.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude:  37.496324, longitude: 126.956879), span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
           mapView.delegate = self
        
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
+        //self.locationManager.delegate = self
+        //self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        //self.locationManager.requestWhenInUseAuthorization()
+        //self.locationManager.startUpdatingLocation()
        
-        self.mapView.showsUserLocation = true
+        //self.mapView.showsUserLocation = true
         
         test()
     }
@@ -48,9 +49,8 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate{
                 let title = d.title
                 let category = d.category
                 let subtitle = d.address
-                let annotation = PPMapAnnotation(coordinate: coordinate, title: title, subtitle: subtitle,category : category, id: String(d.idx) as! String)
+                let annotation = PPMapAnnotation(coordinate: coordinate, title: title, subtitle: subtitle,category : category, id: String(d.idx), sd : d)
                 self.annotationDic[String(d.idx)] = annotation
-                
                 self.mapView.addAnnotation(annotation)
                 
             }
@@ -94,6 +94,15 @@ class MapSearchViewController: UIViewController, CLLocationManagerDelegate{
     
    
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "MapSegue" {
+            let thumbnailViewController = segue.destinationViewController as! ThumbnailListViewController
+            thumbnailViewController.items = arrayForSegue
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -178,12 +187,26 @@ extension MapSearchViewController: MKMapViewDelegate {
         }
         */
         if control == annotationView.rightCalloutAccessoryView {
+            
+            let anno = annotationView.annotation as! PPMapAnnotation
+            arrayForSegue = []
+            for i in anno.getChildList()
+            {
+                arrayForSegue.append(i.data)
+            }
+            performSegueWithIdentifier("MapSegue", sender: self)
+
+            /*
             let alert  = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
+            */
         }
     }
     func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         //     mapView.region.
+    }
+    @IBAction func close(segue: UIStoryboardSegue) {
+        
     }
 }

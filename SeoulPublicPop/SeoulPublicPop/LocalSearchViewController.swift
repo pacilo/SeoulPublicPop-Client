@@ -124,6 +124,9 @@ class LocalSearchViewController: UIViewController {
             let thumbnailViewController = segue.destinationViewController as! ThumbnailListViewController
             thumbnailViewController.categoryType = categoryType
             thumbnailViewController.locationName = selectedName
+            DataCenter.getInstance().getData(selectedName!, category: categoryType!, idx: 0, callback: {(data: [SemiDetail]) -> () in
+                thumbnailViewController.items = data
+            })
         }
     }
     

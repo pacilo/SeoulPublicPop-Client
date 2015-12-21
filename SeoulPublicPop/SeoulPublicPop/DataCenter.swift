@@ -101,7 +101,7 @@ class DataCenter {
         loader.Start(DetailRequest(id: idx,category:category), callBack:  {(data:AnyObject)->() in
             result = Detail(ResData: data)
         })
-        while(result != nil) {}
+        while(result == nil) {}
         return result!
     }
     

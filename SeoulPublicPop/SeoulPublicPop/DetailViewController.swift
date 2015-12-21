@@ -7,6 +7,19 @@
 //
 import MapKit
 import UIKit
+import Foundation
+
+class sm : NSObject, MKAnnotation
+{
+    var coordinate : CLLocationCoordinate2D
+    var title : String?
+    var realtitle : String?
+    
+    init(lat : Double, lon : Double)
+    {
+        coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+    }
+}
 class DetailViewController : UITableViewController {
     @IBOutlet weak var mapView: MKMapView!
     
@@ -19,14 +32,28 @@ class DetailViewController : UITableViewController {
     @IBOutlet weak var telLabel:UILabel!
     @IBOutlet weak var internetLabel:UILabel!
     
+    var data : Detail!;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        caLabel.text    = data.category
+        titleLabel.text = data.title
+        PlaceLabel.text = data.place
+        PayatLabel.text = data.payat
+        recpLabel.text  = data.recp
+        addressLabel.text = data.address
+        telLabel.text = data.tel
         
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        mapView.rotateEnabled = false
+        mapView.zoomEnabled     = false
+        mapView.scrollEnabled = false
+        mapView.pitchEnabled = false
+        
+        let span = MKCoordinateSpan(latitudeDelta: 0, longitudeDelta: 0.005)
+        mapView.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude:  data.lat, longitude: data.lon), span: span)
+        let anno = sm(lat: data.lat, lon: data.lon)
+        mapView.addAnnotation(anno)
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,7 +67,7 @@ class DetailViewController : UITableViewController {
         }
         if indexPath.row == 8
         {
-            print("예약!")
+            UIApplication.sharedApplication().openURL(NSURL(string: data.internet)!)
         }
     }
     

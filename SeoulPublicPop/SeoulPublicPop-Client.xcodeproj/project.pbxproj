@@ -228,6 +228,7 @@
 				AF7493A61C0630FA00BF1405 /* SeoulPublicPop.xcdatamodeld */,
 				AFDBE3951C2233930072B9DB /* ChunkOfRequestInfo.swift */,
 				CD97D7E71C275265001A7A95 /* DetailData.swift */,
+				CD97D7E51C274C3A001A7A95 /* DetailViewController.swift */,
 				CD637E821C257C6400094082 /* SemiDetailData.swift */,
 			);
 			name = "Database & Resource";
@@ -238,7 +239,6 @@
 			children = (
 				AF74939F1C0630FA00BF1405 /* AppDelegate.swift */,
 				AF7493AE1C0630FA00BF1405 /* Info.plist */,
-				CD97D7E51C274C3A001A7A95 /* DetailViewController.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
